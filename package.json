@@ -1,0 +1,53 @@
+{
+  "name": "campus-radar-dsh",
+  "version": "0.2.0-preview.2",
+  "private": true,
+  "license": "Apache-2.0",
+  "type": "module",
+  "description": "校园雷达：公开活动采集、简报与本地每日更新（macOS 预览版）",
+  "main": "plugin/index.js",
+  "exports": {
+    ".": "./plugin/index.js",
+    "./client": "./plugin/client.js",
+    "./package.json": "./package.json"
+  },
+  "bin": {
+    "campus-radar": "tools/campus-radar"
+  },
+  "files": [
+    "plugin/index.js",
+    "plugin/client.js",
+    "plugin/cordis.patch.yml",
+    "campus_radar/*.py",
+    "data/sources.json",
+    "requirements.txt",
+    "tools/campus-radar",
+    "docs/INSTALL.md"
+  ],
+  "engines": {
+    "dsh": "0.2.1-rc.3"
+  },
+  "os": [
+    "darwin"
+  ],
+  "dsh": {
+    "client": {
+      "platform": "web",
+      "inject": [
+        "@deepseek-ai/dsh-client-connection",
+        "@deepseek-ai/dsh-client-ui-layout",
+        "@deepseek-ai/dsh-client-ui-sidebar"
+      ]
+    },
+    "bundle": {
+      "patch": "./plugin/cordis.patch.yml"
+    }
+  },
+  "scripts": {
+    "test": "node --test plugin/test.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alexlu997/campus-radar.git"
+  }
+}

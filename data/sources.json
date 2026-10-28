@@ -1,0 +1,936 @@
+{
+  "schema_version": 1,
+  "updated_at": "2026-10-28T07:43:23.441466+00:00",
+  "scope": "阶段一公开来源调查；候选、入口确认与采集通过分开计数；不包含登录内容。",
+  "sources": [
+    {
+      "id": "sjtu-news-lectures",
+      "name": "学校新闻学术网·学术讲座",
+      "organization": "上海交通大学新闻中心",
+      "channel_type": "website_column",
+      "url": "https://news.sjtu.edu.cn/xsjz/index.html",
+      "discovery_url": "https://www.sjtu.edu.cn/jgsz/",
+      "categories": [
+        "学术科研"
+      ],
+      "category": "学术科研",
+      "visibility": "public",
+      "access_method": "HTML",
+      "status": "采集已验证",
+      "checked_at": "2026-10-28T07:32:00.355506+00:00",
+      "latest_sample": {
+        "url": "https://news.sjtu.edu.cn/xsjz/20261023/226851.html",
+        "title": "科研与求学——本科生科研建议",
+        "published_at": "2026-10-22"
+      },
+      "coverage": "2026-10-28 验证过首两页列表，共 20 个不同详情链接。当前补扫范围见本次采集记录，未宣称全历史覆盖。",
+      "last_error": null,
+      "next_action": "保留公开来源按需采集；持续更新、完整历史覆盖和每日使用价值属于后续验收。",
+      "evidence_level": "official_navigation",
+      "identity_status": "official_site",
+      "last_successful_collection_at": "2026-10-28T07:31:53+00:00",
+      "network_conditions": "本机 macOS 请求级物理接口直连；三站已验证系统代理/TUN 开启、关闭和同进程开→关→开；系统设置由用户手动切换，采集器不修改。",
+      "adapter": "sjtu_news",
+      "allowed_hosts": [
+        "news.sjtu.edu.cn"
+      ],
+      "enabled": true,
+      "network_mode": "direct",
+      "previous_check": {
+        "checked_at": "2026-10-28T05:40:13Z",
+        "coverage": "网页阅读工具确认列表首页10条；未证明历史分页完整。首项活动为2026-10-27，检查时已结束。",
+        "last_error": "本机提升curl读取列表时LibreSSL SSL_ERROR_SYSCALL (35)；网页工具详情曾超时，后续读取成功。",
+        "network_conditions": "本轮使用公开网页阅读/搜索工具；本机直连采集另行验证，不从网页工具可读推断本机可用。"
+      },
+      "collection_evidence": "outputs/phase1-qualification/live-final/report.json"
+    },
+    {
+      "id": "sjtu-me-reports",
+      "name": "机动学院·学术报告",
+      "organization": "机械与动力工程学院",
+      "channel_type": "website_column",
+      "url": "https://me.sjtu.edu.cn/tsfx-xsbg.html",
+      "discovery_url": "https://me.sjtu.edu.cn/",
+      "categories": [
+        "学术科研"
+      ],
+      "category": "学术科研",
+      "visibility": "public",
+      "access_method": "HTML",
+      "status": "采集已验证",
+      "checked_at": "2026-10-28T07:32:00.355506+00:00",
+      "latest_sample": {
+        "url": "https://me.sjtu.edu.cn/tsfx-xsbg/78072.html",
+        "title": "思源讲堂第四十三期：Prof. Erwin Reisner学术报告会",
+        "published_at": "2026-11-09"
+      },
+      "coverage": "2026-10-28 验证过首两页列表，共 24 个不同详情链接。当前补扫范围见本次采集记录，未宣称全历史覆盖。 四篇样本的页面发布时间晚于检查日；保留原值与异常证据，不作为真实发布时刻。",
+      "last_error": null,
+      "next_action": "保留公开来源按需采集；持续更新、完整历史覆盖和每日使用价值属于后续验收。",
+      "evidence_level": "official_navigation",
+      "identity_status": "official_site",
+      "last_successful_collection_at": "2026-10-28T07:31:57+00:00",
+      "network_conditions": "本机 macOS 请求级物理接口直连；三站已验证系统代理/TUN 开启、关闭和同进程开→关→开；系统设置由用户手动切换，采集器不修改。",
+      "adapter": "sjtu_me",
+      "allowed_hosts": [
+        "me.sjtu.edu.cn"
+      ],
+      "enabled": true,
+      "network_mode": "direct",
+      "previous_check": {
+        "checked_at": "2026-10-28T05:40:13Z",
+        "coverage": "网页列表首页12条、显示17页；仅打开首页与部分正文，未遍历17页。",
+        "last_error": "本机提升curl列表连接30秒超时(28)。样本网页标发布时间2026-11-09晚于检查日，且与举办日相同；保留原值，不证明真实发布时间。",
+        "network_conditions": "本轮使用公开网页阅读/搜索工具；本机直连采集另行验证，不从网页工具可读推断本机可用。"
+      },
+      "collection_evidence": "outputs/phase1-qualification/live-final/report.json"
+    },
+    {
+      "id": "sjtu-ctld-events",
+      "name": "教学发展中心·活动中心",
+      "organization": "教学发展中心",
+      "channel_type": "website_column",
+      "url": "https://ctld.sjtu.edu.cn/events",
+      "discovery_url": "https://www.sjtu.edu.cn/jgsz/",
+      "categories": [
+        "学术科研",
+        "创新创业",
+        "奖助与项目机会"
+      ],
+      "category": "学术科研",
+      "visibility": "public",
+      "access_method": "HTML",
+      "status": "采集已验证",
+      "checked_at": "2026-10-28T07:32:00.355506+00:00",
+      "latest_sample": {
+        "url": "https://ctld.sjtu.edu.cn/events/detail/13wft64voa11do0tp1f0utg19mko91ul",
+        "title": "中国高校第九届教学学术年会征稿通知",
+        "published_at": null,
+        "document_signed_date": "2026-10-12"
+      },
+      "coverage": "2026-10-28 验证过首两页列表，共 24 个不同详情链接。当前补扫范围见本次采集记录，未宣称全历史覆盖。",
+      "last_error": null,
+      "next_action": "保留公开来源按需采集；持续更新、完整历史覆盖和每日使用价值属于后续验收。",
+      "evidence_level": "official_navigation",
+      "identity_status": "official_site",
+      "last_successful_collection_at": "2026-10-28T07:32:00+00:00",
+      "network_conditions": "本机 macOS 请求级物理接口直连；三站已验证系统代理/TUN 开启、关闭和同进程开→关→开；系统设置由用户手动切换，采集器不修改。",
+      "adapter": "ctld",
+      "allowed_hosts": [
+        "ctld.sjtu.edu.cn"
+      ],
+      "enabled": true,
+      "network_mode": "direct",
+      "previous_check": {
+        "checked_at": "2026-10-28T05:40:13Z",
+        "coverage": "基础events路径本轮多次超时；官方带group_id的公开列表和详情可被网页搜索工具读取，学生学习分类显示151条，不是已采集数。",
+        "last_error": "web直接读取/events超时；不能将搜索索引正文等同于本机采集通过。",
+        "network_conditions": "本轮使用公开网页阅读/搜索工具；本机直连采集另行验证，不从网页工具可读推断本机可用。"
+      },
+      "collection_evidence": "outputs/phase1-qualification/live-final/report.json"
+    },
+    {
+      "id": "sjtu-cs-academic",
+      "name": "计算机学院·学术活动",
+      "organization": "计算机学院",
+      "channel_type": "website_column",
+      "url": "https://www.cs.sjtu.edu.cn/xshd.html",
+      "discovery_url": "https://www.cs.sjtu.edu.cn/",
+      "categories": [
+        "学术科研"
+      ],
+      "category": "学术科研",
+      "visibility": "public",
+      "access_method": "HTML / 人工链接",
+      "status": "受阻",
+      "checked_at": "2026-10-28T05:40:13Z",
+      "latest_sample": {
+        "url": null,
+        "title": null,
+        "published_at": null
+      },
+      "coverage": "任务书种子；本轮该URL网页读取超时。既有本轮核查还发现部分详情跳转微信，正文可用性须逐条验证。",
+      "last_error": "列表web读取超时；微信详情不能视为学院HTML正文。",
+      "next_action": "复核官方入口与少量详情的最终地址；保留跨站跳转状态，不绕过微信限制。",
+      "evidence_level": "task_brief_seed",
+      "identity_status": "official_site",
+      "last_successful_collection_at": null,
+      "network_conditions": "本轮使用公开网页阅读/搜索工具；本机直连采集另行验证，不从网页工具可读推断本机可用。",
+      "adapter": null,
+      "allowed_hosts": [
+        "www.cs.sjtu.edu.cn"
+      ],
+      "enabled": false
+    },
+    {
+      "id": "sjtu-si-notices",
+      "name": "学生创新中心·通知公告",
+      "organization": "学生创新中心",
+      "channel_type": "website_column",
+      "url": "https://si.sjtu.edu.cn/content/news-list?menuIds=2,8,18&params=5&singlePage=1",
+      "discovery_url": "https://si.sjtu.edu.cn/home",
+      "categories": [
+        "创新创业",
+        "竞赛实践",
+        "奖助与项目机会"
+      ],
+      "category": "创新创业",
+      "visibility": "public",
+      "access_method": "HTML",
+      "status": "入口已确认",
+      "checked_at": "2026-10-28T05:40:13Z",
+      "latest_sample": {
+        "url": null,
+        "title": "关于开展2026年度上海交通大学学生概念验证项目申报工作的通知",
+        "published_at": "2026-10-22"
+      },
+      "coverage": "官网导航及首页通知栏已读；专栏链接本轮超时。首页显示2026-10-22学生概念验证项目申报通知。",
+      "last_error": "独立栏目URL本轮超时；未读取首项详情。",
+      "next_action": "开发有边界的列表和正文适配后，分别核对字段与重跑结果。",
+      "evidence_level": "official_navigation",
+      "identity_status": "official_site",
+      "last_successful_collection_at": null,
+      "network_conditions": "本轮使用公开网页阅读/搜索工具；本机直连采集另行验证，不从网页工具可读推断本机可用。",
+      "adapter": null,
+      "allowed_hosts": [
+        "si.sjtu.edu.cn"
+      ],
+      "enabled": false
+    },
+    {
+      "id": "sjtu-si-projects",
+      "name": "学生创新中心·大创资讯",
+      "organization": "学生创新中心",
+      "channel_type": "website_column",
+      "url": "https://si.sjtu.edu.cn/content/news-list?menuIds=3,23,25&params=13&singlePage=1",
+      "discovery_url": "https://si.sjtu.edu.cn/home",
+      "categories": [
+        "创新创业",
+        "奖助与项目机会"
+      ],
+      "category": "创新创业",
+      "visibility": "public",
+      "access_method": "HTML",
+      "status": "候选",
+      "checked_at": "2026-10-28T05:40:13Z",
+      "latest_sample": {
+        "url": null,
+        "title": null,
+        "published_at": null
+      },
+      "coverage": "官网导航链接已发现，独立栏目未取得正文。",
+      "last_error": "栏目URL本轮超时。",
+      "next_action": "重查大创资讯栏目，取得列表和样本后升级为入口已确认。",
+      "evidence_level": "official_navigation",
+      "identity_status": "official_site",
+      "last_successful_collection_at": null,
+      "network_conditions": "本轮使用公开网页阅读/搜索工具；本机直连采集另行验证，不从网页工具可读推断本机可用。",
+      "adapter": null,
+      "allowed_hosts": [
+        "si.sjtu.edu.cn"
+      ],
+      "enabled": false
+    },
+    {
+      "id": "sjtu-si-competitions",
+      "name": "学生创新中心·竞赛资讯",
+      "organization": "学生创新中心",
+      "channel_type": "website_column",
+      "url": "https://si.sjtu.edu.cn/content/news-list?menuIds=3,26,28&params=16&singlePage=1",
+      "discovery_url": "https://si.sjtu.edu.cn/home",
+      "categories": [
+        "竞赛实践",
+        "创新创业"
+      ],
+      "category": "竞赛实践",
+      "visibility": "public",
+      "access_method": "HTML",
+      "status": "入口已确认",
+      "checked_at": "2026-10-28T05:40:13Z",
+      "latest_sample": {
+        "url": "https://si.sjtu.edu.cn/content/news-detail?menuIds=3,26,28&params=a16d6fa336be4bb9bee99374024b78ba",
+        "title": "关于2026长三角VEX机器人精英赛的通知",
+        "published_at": "2026-06-11"
+      },
+      "coverage": "公开列表第一页可读，显示161条/14页；未遍历14页。公告与获奖回顾混合，需分类。",
+      "last_error": null,
+      "next_action": "开发有边界的列表和正文适配后，分别核对字段与重跑结果。",
+      "evidence_level": "official_navigation",
+      "identity_status": "official_site",
+      "last_successful_collection_at": null,
+      "network_conditions": "本轮使用公开网页阅读/搜索工具；本机直连采集另行验证，不从网页工具可读推断本机可用。",
+      "adapter": null,
+      "allowed_hosts": [
+        "si.sjtu.edu.cn"
+      ],
+      "enabled": false
+    },
+    {
+      "id": "sjtu-si-training",
+      "name": "学生创新中心·培训讲座",
+      "organization": "学生创新中心",
+      "channel_type": "website_column",
+      "url": "https://si.sjtu.edu.cn/content/news-list?menuIds=3,26,59&params=32&singlePage=1",
+      "discovery_url": "https://si.sjtu.edu.cn/home",
+      "categories": [
+        "创新创业",
+        "学术科研"
+      ],
+      "category": "创新创业",
+      "visibility": "public",
+      "access_method": "HTML",
+      "status": "入口已确认",
+      "checked_at": "2026-10-28T05:40:13Z",
+      "latest_sample": {
+        "url": "https://si.sjtu.edu.cn/content/news-detail?menuIds=3,26,59&params=7f1ee36fa8314c7fa9bd8665ad5d3f9a",
+        "title": "关于举办2026年第四期“群雁齐飞计划”——AI时代高校创新创业实践育人师资培训班的通知",
+        "published_at": "2026-04-18"
+      },
+      "coverage": "列表第一页可读，显示48条/4页；最新列表项为2026-04-18，后续多为回顾。",
+      "last_error": "首项详情本轮超时；不能只凭列表摘要证明资格。",
+      "next_action": "开发有边界的列表和正文适配后，分别核对字段与重跑结果。",
+      "evidence_level": "official_navigation",
+      "identity_status": "official_site",
+      "last_successful_collection_at": null,
+      "network_conditions": "本轮使用公开网页阅读/搜索工具；本机直连采集另行验证，不从网页工具可读推断本机可用。",
+      "adapter": null,
+      "allowed_hosts": [
+        "si.sjtu.edu.cn"
+      ],
+      "enabled": false
+    },
+    {
+      "id": "sjtu-si-clubs",
+      "name": "学生创新中心·社团介绍",
+      "organization": "学生创新中心",
+      "channel_type": "official_directory",
+      "url": "https://si.sjtu.edu.cn/content/news-list?menuIds=3,33,34&params=22&singlePage=1",
+      "discovery_url": "https://si.sjtu.edu.cn/home",
+      "categories": [
+        "文体社团",
+        "竞赛实践"
+      ],
+      "category": "文体社团",
+      "visibility": "public",
+      "access_method": "HTML",
+      "status": "入口已确认",
+      "checked_at": "2026-10-28T05:40:13Z",
+      "latest_sample": {
+        "url": "https://si.sjtu.edu.cn/content/news-detail?menuIds=3,33,34&params=4b75888f34c94261b14a47f67659deac",
+        "title": "上海交通大学VEX机器人赛队",
+        "published_at": "2022-11-08"
+      },
+      "coverage": "官方社团目录可读；列表首项2022-11-08。用于发现账号和组织，不能代表2026年仍在招新。",
+      "last_error": null,
+      "next_action": "按社团官方当前入口继续核验；历史介绍不作为当前机会。",
+      "evidence_level": "official_navigation",
+      "identity_status": "official_site",
+      "last_successful_collection_at": null,
+      "network_conditions": "本轮使用公开网页阅读/搜索工具；本机直连采集另行验证，不从网页工具可读推断本机可用。",
+      "adapter": null,
+      "allowed_hosts": [
+        "si.sjtu.edu.cn"
+      ],
+      "enabled": false
+    },
+    {
+      "id": "sjtu-si-public-welfare",
+      "name": "学生创新中心·公益动态",
+      "organization": "学生创新中心",
+      "channel_type": "website_column",
+      "url": "https://si.sjtu.edu.cn/content/news-list?menuIds=6,48,51&params=30&singlePage=1",
+      "discovery_url": "https://si.sjtu.edu.cn/home",
+      "categories": [
+        "志愿服务",
+        "竞赛实践"
+      ],
+      "category": "志愿服务",
+      "visibility": "public",
+      "access_method": "HTML",
+      "status": "候选",
+      "checked_at": "2026-10-28T05:40:13Z",
+      "latest_sample": {
+        "url": null,
+        "title": null,
+        "published_at": null
+      },
+      "coverage": "在学生创新中心官方导航发现公益动态栏目；未读到列表正文。",
+      "last_error": "栏目URL本轮超时。",
+      "next_action": "复核列表并判断是志愿招募还是活动回顾。",
+      "evidence_level": "official_navigation",
+      "identity_status": "official_site",
+      "last_successful_collection_at": null,
+      "network_conditions": "本轮使用公开网页阅读/搜索工具；本机直连采集另行验证，不从网页工具可读推断本机可用。",
+      "adapter": null,
+      "allowed_hosts": [
+        "si.sjtu.edu.cn"
+      ],
+      "enabled": false
+    },
+    {
+      "id": "sjtu-gs-competitions",
+      "name": "研究生院·研究生创新创业竞赛",
+      "organization": "研究生院",
+      "channel_type": "website_column",
+      "url": "https://www.gs.sjtu.edu.cn/zxgz/yjscxcyjs",
+      "discovery_url": "https://www.sjtu.edu.cn/jgsz/",
+      "categories": [
+        "竞赛实践",
+        "创新创业"
+      ],
+      "category": "竞赛实践",
+      "visibility": "public",
+      "access_method": "HTML",
+      "status": "入口已确认",
+      "checked_at": "2026-10-28T05:40:13Z",
+      "latest_sample": {
+        "url": null,
+        "title": "通知——第八届中国研究生机器人创新设计大赛",
+        "published_at": "2026-07-07"
+      },
+      "coverage": "公开栏目可读；列表首批显示2026-07-07机器人、数学建模、人工智能等竞赛通知，未核对详情与历史分页。",
+      "last_error": null,
+      "next_action": "开发有边界的列表和正文适配后，分别核对字段与重跑结果。",
+      "evidence_level": "official_navigation",
+      "identity_status": "official_site",
+      "last_successful_collection_at": null,
+      "network_conditions": "本轮使用公开网页阅读/搜索工具；本机直连采集另行验证，不从网页工具可读推断本机可用。",
+      "adapter": null,
+      "allowed_hosts": [
+        "www.gs.sjtu.edu.cn"
+      ],
+      "enabled": false
+    },
+    {
+      "id": "sjtu-gs-exchange",
+      "name": "研究生院·国际交流通知",
+      "organization": "研究生院",
+      "channel_type": "website_column",
+      "url": "https://www.gs.sjtu.edu.cn/announcement/exchange",
+      "discovery_url": "https://www.sjtu.edu.cn/jgsz/",
+      "categories": [
+        "国际交流",
+        "奖助与项目机会"
+      ],
+      "category": "国际交流",
+      "visibility": "public",
+      "access_method": "HTML",
+      "status": "入口已确认",
+      "checked_at": "2026-10-28T05:40:13Z",
+      "latest_sample": {
+        "url": null,
+        "title": "2026年第三批创新型人才国际合作培养项目推荐人员公示",
+        "published_at": "2026-09-07"
+      },
+      "coverage": "公开列表可读；同栏含项目招募与拟推荐人员公示。仅应提取机会事实，不采集公示中的个人名单。",
+      "last_error": null,
+      "next_action": "优先项目专栏与招募通知，排除与机会发现无关的名单；核验分页。",
+      "evidence_level": "official_navigation",
+      "identity_status": "official_site",
+      "last_successful_collection_at": null,
+      "network_conditions": "本轮使用公开网页阅读/搜索工具；本机直连采集另行验证，不从网页工具可读推断本机可用。",
+      "adapter": null,
+      "allowed_hosts": [
+        "www.gs.sjtu.edu.cn"
+      ],
+      "enabled": false
+    },
+    {
+      "id": "sjtu-global-projects",
+      "name": "国际合作与交流处·项目通知",
+      "organization": "国际合作与交流处",
+      "channel_type": "website_column",
+      "url": "https://global.sjtu.edu.cn/announcement/category/20",
+      "discovery_url": "https://www.sjtu.edu.cn/jgsz/",
+      "categories": [
+        "国际交流",
+        "奖助与项目机会"
+      ],
+      "category": "国际交流",
+      "visibility": "public",
+      "access_method": "HTML",
+      "status": "入口已确认",
+      "checked_at": "2026-10-28T05:40:13Z",
+      "latest_sample": {
+        "url": null,
+        "title": "关于申报2026年下半年蒙民伟国际交流基金的通知",
+        "published_at": null
+      },
+      "coverage": "官方导航项目通知栏目，网页工具成功与超时交替；列表含2026年下半年蒙民伟基金等，未核实列表首项发布日期。",
+      "last_error": "本轮部分重复读取超时。",
+      "next_action": "开发有边界的列表和正文适配后，分别核对字段与重跑结果。",
+      "evidence_level": "official_navigation",
+      "identity_status": "official_site",
+      "last_successful_collection_at": null,
+      "network_conditions": "本轮使用公开网页阅读/搜索工具；本机直连采集另行验证，不从网页工具可读推断本机可用。",
+      "adapter": null,
+      "allowed_hosts": [
+        "global.sjtu.edu.cn"
+      ],
+      "enabled": false
+    },
+    {
+      "id": "sjtu-global-events",
+      "name": "国际合作与交流处·活动预告",
+      "organization": "国际合作与交流处",
+      "channel_type": "website_column",
+      "url": "https://global.sjtu.edu.cn/event",
+      "discovery_url": "https://global.sjtu.edu.cn/announcement/category/20",
+      "categories": [
+        "国际交流",
+        "学术科研"
+      ],
+      "category": "国际交流",
+      "visibility": "public",
+      "access_method": "HTML",
+      "status": "入口已确认",
+      "checked_at": "2026-10-28T05:40:13Z",
+      "latest_sample": {
+        "url": "https://global.sjtu.edu.cn/event/view/45",
+        "title": "讲座预告 | 维思大学校长Michael S. Roth教授: The Student - A Short History",
+        "published_at": null
+      },
+      "coverage": "公开列表可读；本轮列表首项2023-10-18且明确已结束，只能验证历史解析。",
+      "last_error": null,
+      "next_action": "确认是否已迁移活动渠道；不要把2023年历史活动当当前供给。",
+      "evidence_level": "official_navigation",
+      "identity_status": "official_site",
+      "last_successful_collection_at": null,
+      "network_conditions": "本轮使用公开网页阅读/搜索工具；本机直连采集另行验证，不从网页工具可读推断本机可用。",
+      "adapter": null,
+      "allowed_hosts": [
+        "global.sjtu.edu.cn"
+      ],
+      "enabled": false
+    },
+    {
+      "id": "sjtu-me-exchange",
+      "name": "机动学院·国际交流通知公告",
+      "organization": "机械与动力工程学院",
+      "channel_type": "website_column",
+      "url": "https://me.sjtu.edu.cn/tzgg.html",
+      "discovery_url": "https://me.sjtu.edu.cn/tsfx-xsbg.html",
+      "categories": [
+        "国际交流",
+        "奖助与项目机会"
+      ],
+      "category": "国际交流",
+      "visibility": "public",
+      "access_method": "HTML",
+      "status": "入口已确认",
+      "checked_at": "2026-10-28T05:40:13Z",
+      "latest_sample": {
+        "url": null,
+        "title": "2027年瑞典皇家理工学院3+2本硕联合培养项目招募通知",
+        "published_at": "2026-10-08"
+      },
+      "coverage": "公开列表首页10条、显示7页；未遍历。首项为2027年KTH联合培养招募。",
+      "last_error": null,
+      "next_action": "开发有边界的列表和正文适配后，分别核对字段与重跑结果。",
+      "evidence_level": "official_navigation",
+      "identity_status": "official_site",
+      "last_successful_collection_at": null,
+      "network_conditions": "本轮使用公开网页阅读/搜索工具；本机直连采集另行验证，不从网页工具可读推断本机可用。",
+      "adapter": null,
+      "allowed_hosts": [
+        "me.sjtu.edu.cn"
+      ],
+      "enabled": false
+    },
+    {
+      "id": "sjtu-job-public",
+      "name": "就业中心·公开招聘与宣讲入口",
+      "organization": "学生就业服务和职业发展中心",
+      "channel_type": "website_portal",
+      "url": "https://www.job.sjtu.edu.cn/career/index?lmbh=10",
+      "discovery_url": "https://www.job.sjtu.edu.cn/",
+      "categories": [
+        "职业发展"
+      ],
+      "category": "职业发展",
+      "visibility": "public",
+      "access_method": "HTML",
+      "status": "入口已确认",
+      "checked_at": "2026-10-28T05:40:13Z",
+      "latest_sample": {
+        "url": "https://www.job.sjtu.edu.cn/career/xjhxx/view/250300960100978688",
+        "title": "重庆农村商业银行2027年校园招聘宣讲会",
+        "published_at": null
+      },
+      "coverage": "官方公开页面包含宣讲会、双选会、招聘、实习等栏目及10月28日起日程。本轮仅核查入口和公开详情，未登录或报名。",
+      "last_error": null,
+      "next_action": "继续确定各列表稳定入口与分页；公开详情字段中举办时间不当发布时间。",
+      "evidence_level": "official_navigation",
+      "identity_status": "official_site",
+      "last_successful_collection_at": null,
+      "network_conditions": "本轮使用公开网页阅读/搜索工具；本机直连采集另行验证，不从网页工具可读推断本机可用。",
+      "adapter": null,
+      "allowed_hosts": [
+        "www.job.sjtu.edu.cn"
+      ],
+      "enabled": false
+    },
+    {
+      "id": "sjtu-sports-notices",
+      "name": "体育系·通知公告",
+      "organization": "体育系",
+      "channel_type": "website_column",
+      "url": "https://tiyuxi.sjtu.edu.cn/xwgg1/tzgg.htm",
+      "discovery_url": "https://tiyuxi.sjtu.edu.cn/",
+      "categories": [
+        "文体社团",
+        "学术科研"
+      ],
+      "category": "文体社团",
+      "visibility": "public",
+      "access_method": "HTML",
+      "status": "入口已确认",
+      "checked_at": "2026-10-28T05:40:13Z",
+      "latest_sample": {
+        "url": "https://tiyuxi.sjtu.edu.cn/info/1077/30861.htm",
+        "title": "体育系2026年“三好学生”“优秀学生干部”获评名单公示",
+        "published_at": "2026-10-26"
+      },
+      "coverage": "公开列表15条、显示7页，含学术大会、招生、公示，不全是可参加活动。",
+      "last_error": null,
+      "next_action": "筛选活动公告；不下载或保存无关获奖个人名单。",
+      "evidence_level": "official_navigation",
+      "identity_status": "official_site",
+      "last_successful_collection_at": null,
+      "network_conditions": "本轮使用公开网页阅读/搜索工具；本机直连采集另行验证，不从网页工具可读推断本机可用。",
+      "adapter": null,
+      "allowed_hosts": [
+        "tiyuxi.sjtu.edu.cn"
+      ],
+      "enabled": false
+    },
+    {
+      "id": "sjtu-sports-events",
+      "name": "体育系·赛事与活动速递",
+      "organization": "体育系",
+      "channel_type": "website_column",
+      "url": "https://tiyuxi.sjtu.edu.cn/xyty/ss_s_hdsd.htm",
+      "discovery_url": "https://tiyuxi.sjtu.edu.cn/xwgg1/tzgg.htm",
+      "categories": [
+        "文体社团",
+        "竞赛实践"
+      ],
+      "category": "文体社团",
+      "visibility": "public",
+      "access_method": "HTML",
+      "status": "入口已确认",
+      "checked_at": "2026-10-28T05:40:13Z",
+      "latest_sample": {
+        "url": null,
+        "title": null,
+        "published_at": null
+      },
+      "coverage": "官方校园体育导航链接已打开；尚未对活动预告与赛事回顾进行详情抽查。",
+      "last_error": null,
+      "next_action": "读取少量详情，区分报名、赛程与赛事结果后适配。",
+      "evidence_level": "official_navigation",
+      "identity_status": "official_site",
+      "last_successful_collection_at": null,
+      "network_conditions": "本轮使用公开网页阅读/搜索工具；本机直连采集另行验证，不从网页工具可读推断本机可用。",
+      "adapter": null,
+      "allowed_hosts": [
+        "tiyuxi.sjtu.edu.cn"
+      ],
+      "enabled": false
+    },
+    {
+      "id": "sjtu-affairs-notices",
+      "name": "学生事务中心·通知公告",
+      "organization": "学生事务中心",
+      "channel_type": "website_portal",
+      "url": "https://affairs.sjtu.edu.cn/",
+      "discovery_url": "https://yzb.sjtu.edu.cn/post/3501",
+      "categories": [
+        "奖助与项目机会"
+      ],
+      "category": "奖助与项目机会",
+      "visibility": "public",
+      "access_method": "HTML",
+      "status": "入口已确认",
+      "checked_at": "2026-10-28T05:40:13Z",
+      "latest_sample": {
+        "url": null,
+        "title": "2026年上海交通大学 港澳及华侨学生奖学金、台湾学生奖学金 拟获奖学生名单公示",
+        "published_at": "2026-10-22"
+      },
+      "coverage": "官方研究生报到通知指向此站；公开搜索可读首页通知，直接打开本轮超时。jzxj.sjtu.edu.cn出现相同标题，但未证明别名关系，未重复计数。",
+      "last_error": "web直接打开首页超时。",
+      "next_action": "锁定通知栏目与申请类内容；个人公示不作为采集目标。",
+      "evidence_level": "official_navigation",
+      "identity_status": "official_site",
+      "last_successful_collection_at": null,
+      "network_conditions": "本轮使用公开网页阅读/搜索工具；本机直连采集另行验证，不从网页工具可读推断本机可用。",
+      "adapter": null,
+      "allowed_hosts": [
+        "affairs.sjtu.edu.cn"
+      ],
+      "enabled": false
+    },
+    {
+      "id": "sjtu-jcjy-volunteer",
+      "name": "基础教育办公室·志愿者",
+      "organization": "基础教育办公室",
+      "channel_type": "website_information",
+      "url": "https://jcjy.sjtu.edu.cn/volunteer",
+      "discovery_url": "https://www.sjtu.edu.cn/jgsz/",
+      "categories": [
+        "志愿服务"
+      ],
+      "category": "志愿服务",
+      "visibility": "public",
+      "access_method": "HTML",
+      "status": "入口已确认",
+      "checked_at": "2026-10-28T05:40:13Z",
+      "latest_sample": {
+        "url": null,
+        "title": null,
+        "published_at": null
+      },
+      "coverage": "官方志愿者介绍页面提到面向交大本研的志愿者管理平台；无本轮可核实的具体招募样本。",
+      "last_error": "直接读取超时；搜索工具取得官方介绍正文。",
+      "next_action": "发现当前公开招募栏目；不能把平台规划文字认定为平台已可采集。",
+      "evidence_level": "official_navigation",
+      "identity_status": "official_site",
+      "last_successful_collection_at": null,
+      "network_conditions": "本轮使用公开网页阅读/搜索工具；本机直连采集另行验证，不从网页工具可读推断本机可用。",
+      "adapter": null,
+      "allowed_hosts": [
+        "jcjy.sjtu.edu.cn"
+      ],
+      "enabled": false
+    },
+    {
+      "id": "sjtu-youth-site",
+      "name": "团委官网（待定位栏目）",
+      "organization": "共青团上海交通大学委员会",
+      "channel_type": "website_candidate",
+      "url": "https://youth.sjtu.edu.cn/",
+      "discovery_url": "https://www.sjtu.edu.cn/jgsz/",
+      "categories": [
+        "志愿服务",
+        "文体社团",
+        "竞赛实践"
+      ],
+      "category": "志愿服务",
+      "visibility": "public",
+      "access_method": "HTML",
+      "status": "候选",
+      "checked_at": "2026-10-28T05:40:13Z",
+      "latest_sample": {
+        "url": null,
+        "title": null,
+        "published_at": null
+      },
+      "coverage": "任务书种子，学校组织目录说明团委与学生处合署；本轮未取得站点内容，不宣称已确定具体栏目。",
+      "last_error": "web读取首页超时。",
+      "next_action": "复核官网当前栏目与官方账号入口，不把种子域名算有效栏目。",
+      "evidence_level": "task_brief_seed",
+      "identity_status": "official_site",
+      "last_successful_collection_at": null,
+      "network_conditions": "本轮使用公开网页阅读/搜索工具；本机直连采集另行验证，不从网页工具可读推断本机可用。",
+      "adapter": null,
+      "allowed_hosts": [
+        "youth.sjtu.edu.cn"
+      ],
+      "enabled": false
+    },
+    {
+      "id": "wechat-me-liyuan",
+      "name": "ME砺远学术",
+      "organization": "机械与动力工程学院砺远学术组委会",
+      "channel_type": "wechat_account",
+      "url": "https://mp.weixin.qq.com/s/x2O6fxPWTh6Y4lVgFMqZgw",
+      "discovery_url": "https://me.sjtu.edu.cn/index-zytz/70516.html",
+      "categories": [
+        "学术科研"
+      ],
+      "category": "学术科研",
+      "visibility": "public",
+      "access_method": "本机微信读书授权；仅检查最新一篇公开文章",
+      "status": "最新文章路径已验证",
+      "checked_at": "2026-10-28T12:32:00Z",
+      "latest_sample": {
+        "url": "https://mp.weixin.qq.com/s/x2O6fxPWTh6Y4lVgFMqZgw",
+        "title": "讲座报名 | Prof. Badreddine Assouar学术报告会",
+        "published_at": "2026-10-23T17:56:00+08:00"
+      },
+      "coverage": "已核实公众号身份与一篇公开正文，内容与未登录浏览器一致。每次仅检查最新一篇，不能回补历史；两次检查间连发多篇可能漏采。当前样本与官网是同一场报告会；全号同步率、独有内容和持续稳定性未验。",
+      "last_error": null,
+      "next_action": "观察现有每日任务在限流解除后的恢复、真实新发布及授权有效期；不重复扫码，不以单篇样本推断全号覆盖。",
+      "evidence_level": "public_body_and_authorized_latest_verified",
+      "identity_status": "biz_verified",
+      "last_successful_collection_at": null,
+      "network_conditions": "微信读书 HTTPS 端点，使用本机 WeRSS 保存的个人微信授权；凭据不进入公开库。",
+      "adapter": "weread_latest",
+      "allowed_hosts": [
+        "mp.weixin.qq.com",
+        "weread.qq.com"
+      ],
+      "enabled": false,
+      "book_id": "MP_WXS_3519281128",
+      "wechat_biz": "MzUxOTI4MTEyOA==",
+      "optional": true
+    },
+    {
+      "id": "wechat-si",
+      "name": "上海交通大学学生创新中心",
+      "organization": "学生创新中心",
+      "channel_type": "wechat_account",
+      "url": null,
+      "discovery_url": "https://fxl.sjtu.edu.cn/info/1032/5549.htm",
+      "categories": [
+        "创新创业",
+        "竞赛实践"
+      ],
+      "category": "创新创业",
+      "visibility": "unknown",
+      "access_method": "人工链接",
+      "status": "候选",
+      "checked_at": "2026-10-28T05:40:13Z",
+      "latest_sample": {
+        "url": null,
+        "title": null,
+        "published_at": null
+      },
+      "coverage": "教务处非学历教育信息网页明确列出此公众号名及学生创新中心官网。账号ID、最新推送和获取路径未知。",
+      "last_error": null,
+      "next_action": "核验账号标识与当前正常可访问文章；保持独立于官网的采集状态。",
+      "evidence_level": "official_statement",
+      "identity_status": "official_identity_evidence",
+      "last_successful_collection_at": null,
+      "network_conditions": "本轮使用公开网页阅读/搜索工具；本机直连采集另行验证，不从网页工具可读推断本机可用。",
+      "adapter": null,
+      "allowed_hosts": [],
+      "enabled": false
+    },
+    {
+      "id": "wechat-affairs",
+      "name": "上海交通大学学生事务中心",
+      "organization": "学生事务中心",
+      "channel_type": "wechat_account",
+      "url": null,
+      "discovery_url": "https://yzb.sjtu.edu.cn/post/3501",
+      "categories": [
+        "奖助与项目机会"
+      ],
+      "category": "奖助与项目机会",
+      "visibility": "unknown",
+      "access_method": "人工链接",
+      "status": "候选",
+      "checked_at": "2026-10-28T05:40:13Z",
+      "latest_sample": {
+        "url": null,
+        "title": null,
+        "published_at": null
+      },
+      "coverage": "官方研究生报到通知同时列官网及微信号xssw_SJTU；未获取公众号文章。",
+      "last_error": null,
+      "next_action": "核验当前账号及公开文章，避免收集申请者或公示名单个人信息。",
+      "evidence_level": "official_statement",
+      "identity_status": "official_identity_evidence",
+      "last_successful_collection_at": null,
+      "network_conditions": "本轮使用公开网页阅读/搜索工具；本机直连采集另行验证，不从网页工具可读推断本机可用。",
+      "adapter": null,
+      "allowed_hosts": [],
+      "enabled": false
+    },
+    {
+      "id": "wechat-jingjing",
+      "name": "菁菁有戏",
+      "organization": "上海交通大学精神文明建设委员会办公室",
+      "channel_type": "wechat_account",
+      "url": null,
+      "discovery_url": "https://dwxcb.sjtu.edu.cn/jswm",
+      "categories": [
+        "文体社团"
+      ],
+      "category": "文体社团",
+      "visibility": "unknown",
+      "access_method": "人工链接",
+      "status": "候选",
+      "checked_at": "2026-10-28T05:40:13Z",
+      "latest_sample": {
+        "url": null,
+        "title": null,
+        "published_at": null
+      },
+      "coverage": "党委宣传部文明文化页明确展示“菁菁有戏”微信平台；未获取当前推送和账号标识。",
+      "last_error": null,
+      "next_action": "正常打开近期推送，核对演出、电影与报名日期；不把回顾当演出预告。",
+      "evidence_level": "official_statement",
+      "identity_status": "official_identity_evidence",
+      "last_successful_collection_at": null,
+      "network_conditions": "本轮使用公开网页阅读/搜索工具；本机直连采集另行验证，不从网页工具可读推断本机可用。",
+      "adapter": null,
+      "allowed_hosts": [],
+      "enabled": false
+    },
+    {
+      "id": "wechat-yuanyuan",
+      "name": "交大源源",
+      "organization": null,
+      "channel_type": "wechat_account",
+      "url": null,
+      "discovery_url": "https://sjtu.wiki/sjtu-introduction/wechat",
+      "categories": [
+        "志愿服务"
+      ],
+      "category": "志愿服务",
+      "visibility": "unknown",
+      "access_method": "人工链接",
+      "status": "候选",
+      "checked_at": "2026-10-28T05:40:13Z",
+      "latest_sample": {
+        "url": null,
+        "title": null,
+        "published_at": null
+      },
+      "coverage": "社区目录称其为青年志愿者服务总队公众号；官方单位身份、账号ID与活跃度仍待独立核实。",
+      "last_error": null,
+      "next_action": "从校团委或官方活动通知确认账号，再取得当前招募样本。",
+      "evidence_level": "community_directory",
+      "identity_status": "unverified",
+      "last_successful_collection_at": null,
+      "network_conditions": "本轮使用公开网页阅读/搜索工具；本机直连采集另行验证，不从网页工具可读推断本机可用。",
+      "adapter": null,
+      "allowed_hosts": [],
+      "enabled": false
+    },
+    {
+      "id": "wechat-clubs",
+      "name": "交大社总",
+      "organization": null,
+      "channel_type": "wechat_account",
+      "url": null,
+      "discovery_url": "https://sjtu.wiki/sjtu-introduction/wechat",
+      "categories": [
+        "文体社团"
+      ],
+      "category": "文体社团",
+      "visibility": "unknown",
+      "access_method": "人工链接",
+      "status": "候选",
+      "checked_at": "2026-10-28T05:40:13Z",
+      "latest_sample": {
+        "url": null,
+        "title": null,
+        "published_at": null
+      },
+      "coverage": "社区目录提供社团工作部账号线索；未取得官方运营主体或文章证据。",
+      "last_error": null,
+      "next_action": "从团委官方入口核对账号与社团招新样本；社区目录不证明官方身份。",
+      "evidence_level": "community_directory",
+      "identity_status": "unverified",
+      "last_successful_collection_at": null,
+      "network_conditions": "本轮使用公开网页阅读/搜索工具；本机直连采集另行验证，不从网页工具可读推断本机可用。",
+      "adapter": null,
+      "allowed_hosts": [],
+      "enabled": false
+    }
+  ]
+}

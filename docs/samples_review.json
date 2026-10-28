@@ -1,0 +1,1245 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-10-28T05:45:55Z",
+  "scope": "阶段一十篇真实公开文档的源文复核与采集输出对照；原网页阅读基准保留，追加完整HTML核对证据；未得到用户本人逐项人工确认。",
+  "sample_strategy": "校级讲座列表前3条、机动报告列表前4条、CTLD可正常读取的2条活动详情与1条征稿；有目的抽样，非随机且不代表全站",
+  "counts": {
+    "documents": 10,
+    "websites": 3,
+    "by_source": {
+      "sjtu-news-lectures": 3,
+      "sjtu-me-reports": 4,
+      "sjtu-ctld-events": 3
+    }
+  },
+  "limitations": [
+    "部分网页文本来自搜索工具的公开索引，抓取时间由工具显示；不是本机实时HTTP采集成功的证据。",
+    "Codex已逐字段阅读；未得到用户本人逐项人工确认。",
+    "已对照真实采集输出并记录完整HTML补证；属于Codex逐字段审阅，不是用户本人复核，不宣称全站字段准确率。",
+    "未解析海报和附件；资格、报名状态等未确认时保持未知。"
+  ],
+  "samples": [
+    {
+      "id": "review-news-226851",
+      "source_id": "sjtu-news-lectures",
+      "url": "https://news.sjtu.edu.cn/xsjz/20261023/226851.html",
+      "checked_at": "2026-10-28T05:45:55Z",
+      "review_method": "Codex逐字段阅读公开网页工具返回的官方正文；不是自动采集器输出，也不是用户本人审核",
+      "provenance": "public_web_tool",
+      "visibility": "public",
+      "inserted_into_collection_database": true,
+      "fields": {
+        "title": {
+          "value": "科研与求学——本科生科研建议",
+          "evidence": "官方详情页标题",
+          "review": "confirmed_in_source"
+        },
+        "published_at": {
+          "value": "2026-10-22",
+          "evidence": "2026-10-22",
+          "review": "confirmed_in_source"
+        },
+        "activity_time": {
+          "value": {
+            "starts_at": "2026-10-27T18:30:00+08:00",
+            "ends_at": "2026-10-27T20:00:00+08:00",
+            "timezone": "Asia/Shanghai",
+            "raw": "2026-10-27 18:30-20:00"
+          },
+          "evidence": "2026-10-27 18:30-20:00",
+          "review": "confirmed_in_source"
+        },
+        "location": {
+          "value": "闵行校区陈瑞球楼100号",
+          "evidence": "讲座地点：闵行校区陈瑞球楼 100号",
+          "review": "confirmed_in_source"
+        },
+        "eligibility": {
+          "value": {
+            "addressed_audience": "同学",
+            "complete_conditions": null
+          },
+          "evidence": "请有兴趣参加本次活动的同学；未载完整身份条件",
+          "review": "partial"
+        },
+        "registration_deadline": {
+          "value": {
+            "raw": "10月26日17:00前",
+            "normalized": null
+          },
+          "evidence": "10月26日17:00前；原句未带年份",
+          "review": "partial"
+        },
+        "source": {
+          "value": "https://news.sjtu.edu.cn/xsjz/20261023/226851.html",
+          "evidence": "官方站点详情地址",
+          "review": "confirmed_in_source"
+        }
+      },
+      "content_type": "announcement",
+      "status_at_review": "ended_by_explicit_time",
+      "notes": [
+        "URL日期段为20261023，页内发布日期2026-10-22；采用页内日期，不从URL覆盖。",
+        "只记录明确面向同学，不推断只有本科生可参加。"
+      ],
+      "collector_output_compared": true,
+      "user_human_reviewed": false,
+      "collector_comparison": {
+        "checked_at": "2026-10-28T07:32:00.355506+00:00",
+        "method": "Codex reviewed archived official HTML and compared actual collector output; no user sign-off",
+        "raw_html": "outputs/phase1-qualification/live-final/review-news-226851.html",
+        "raw_sha256": "4a7c42b2f8ea38236dc021414c9ef22f6b0f9f5794e2394157e5216c8ca6df89",
+        "title": "科研与求学——本科生科研建议 — 创新思维训练营（总第30期）",
+        "actual": {
+          "starts_at": "2026-10-27T18:30:00+08:00",
+          "ends_at": "2026-10-27T20:00:00+08:00",
+          "time_precision": "minute",
+          "location": "闵行校区陈瑞球楼 100号",
+          "audience": "同学",
+          "eligibility": null,
+          "registration_deadline": null,
+          "status": "past"
+        },
+        "field_evidence": {
+          "starts_at": {
+            "url": "https://news.sjtu.edu.cn/xsjz/20261023/226851.html",
+            "text": "2026-10-27 18:30-20:00",
+            "precision": "minute"
+          },
+          "ends_at": {
+            "url": "https://news.sjtu.edu.cn/xsjz/20261023/226851.html",
+            "text": "2026-10-27 18:30-20:00",
+            "precision": "minute"
+          },
+          "audience": {
+            "url": "https://news.sjtu.edu.cn/xsjz/20261023/226851.html",
+            "text": "同学",
+            "complete_eligibility": false
+          },
+          "location": {
+            "url": "https://news.sjtu.edu.cn/xsjz/20261023/226851.html",
+            "text": "闵行校区陈瑞球楼 100号"
+          },
+          "registration_deadline": {
+            "url": "https://news.sjtu.edu.cn/xsjz/20261023/226851.html",
+            "partial_texts": [
+              "10月26日17:00前"
+            ],
+            "missing": "year"
+          },
+          "campus": {
+            "url": "https://news.sjtu.edu.cn/xsjz/20261023/226851.html",
+            "text": "闵行校区陈瑞球楼 100号"
+          }
+        },
+        "published_at": "2026-10-22",
+        "warnings": [
+          "images_or_attachments_pending"
+        ],
+        "checks": {
+          "title": "source_supported_or_explicit_unknown",
+          "activity_time": "source_supported_or_explicit_unknown",
+          "location": "source_supported_or_explicit_unknown",
+          "eligibility": "source_supported_or_explicit_unknown",
+          "source": "source_supported_or_explicit_unknown"
+        },
+        "notes": [
+          "详情标题保留页面副标题；正文和地点只存在排版空白差异。"
+        ]
+      }
+    },
+    {
+      "id": "review-news-226850",
+      "source_id": "sjtu-news-lectures",
+      "url": "https://news.sjtu.edu.cn/xsjz/20261023/226850.html",
+      "checked_at": "2026-10-28T05:45:55Z",
+      "review_method": "Codex逐字段阅读公开网页工具返回的官方正文；不是自动采集器输出，也不是用户本人审核",
+      "provenance": "public_web_tool",
+      "visibility": "public",
+      "inserted_into_collection_database": true,
+      "fields": {
+        "title": {
+          "value": "STAR论坛 | 从视觉预测到人机协同：面向手术机器人的世界模型与精细操作学习",
+          "evidence": "官方详情页标题",
+          "review": "confirmed_in_source"
+        },
+        "published_at": {
+          "value": "2026-10-22",
+          "evidence": "2026-10-22",
+          "review": "confirmed_in_source"
+        },
+        "activity_time": {
+          "value": {
+            "starts_at": "2026-10-25T16:00:00+08:00",
+            "ends_at": null,
+            "timezone": "Asia/Shanghai",
+            "raw": "2026-10-25 16:00"
+          },
+          "evidence": "2026-10-25 16:00",
+          "review": "confirmed_in_source"
+        },
+        "location": {
+          "value": "闵行转化医学大楼C100",
+          "evidence": "讲座地点：闵行转化医学大楼 C100",
+          "review": "confirmed_in_source"
+        },
+        "eligibility": {
+          "value": null,
+          "evidence": "可读正文未明确参加资格；未从院系、邀请人或报告主题推定资格",
+          "review": "unknown"
+        },
+        "registration_deadline": {
+          "value": null,
+          "evidence": "本轮可见正文未发现可核实的报名截止时间",
+          "review": "unknown"
+        },
+        "source": {
+          "value": "https://news.sjtu.edu.cn/xsjz/20261023/226850.html",
+          "evidence": "官方站点详情地址",
+          "review": "confirmed_in_source"
+        }
+      },
+      "content_type": "announcement",
+      "status_at_review": "past_start_end_unknown",
+      "notes": [
+        "只有开始时刻，结束时间未知；不计算时长。",
+        "页面含讲座海报，未做图片OCR，不能声称覆盖海报中全部字段。"
+      ],
+      "collector_output_compared": true,
+      "user_human_reviewed": false,
+      "collector_comparison": {
+        "checked_at": "2026-10-28T07:32:00.355506+00:00",
+        "method": "Codex reviewed archived official HTML and compared actual collector output; no user sign-off",
+        "raw_html": "outputs/phase1-qualification/live-final/review-news-226850.html",
+        "raw_sha256": "b5f5a90383d88dd447819530e5a2d5e3bc21dbde3ad33e9c4f0237b6e44d79dc",
+        "title": "STAR论坛 | 从视觉预测到人机协同： 面向手术机器人的世界模型与精细操作学习 — 转化医学STAR论坛",
+        "actual": {
+          "starts_at": "2026-10-25T16:00:00+08:00",
+          "ends_at": null,
+          "time_precision": "minute",
+          "location": "闵行转化医学大楼 C100",
+          "audience": null,
+          "eligibility": null,
+          "registration_deadline": null,
+          "status": "started_end_unknown"
+        },
+        "field_evidence": {
+          "starts_at": {
+            "url": "https://news.sjtu.edu.cn/xsjz/20261023/226850.html",
+            "text": "2026-10-25 16:00",
+            "precision": "minute"
+          },
+          "location": {
+            "url": "https://news.sjtu.edu.cn/xsjz/20261023/226850.html",
+            "text": "闵行转化医学大楼 C100"
+          },
+          "campus": {
+            "url": "https://news.sjtu.edu.cn/xsjz/20261023/226850.html",
+            "text": "闵行转化医学大楼 C100"
+          }
+        },
+        "published_at": "2026-10-22",
+        "warnings": [
+          "images_or_attachments_pending"
+        ],
+        "checks": {
+          "title": "source_supported_or_explicit_unknown",
+          "activity_time": "source_supported_or_explicit_unknown",
+          "location": "source_supported_or_explicit_unknown",
+          "eligibility": "source_supported_or_explicit_unknown",
+          "source": "source_supported_or_explicit_unknown"
+        },
+        "notes": [
+          "详情标题保留页面副标题；正文和地点只存在排版空白差异。"
+        ]
+      }
+    },
+    {
+      "id": "review-news-226745",
+      "source_id": "sjtu-news-lectures",
+      "url": "https://news.sjtu.edu.cn/xsjz/20261019/226745.html",
+      "checked_at": "2026-10-28T05:45:55Z",
+      "review_method": "Codex逐字段阅读公开网页工具返回的官方正文；不是自动采集器输出，也不是用户本人审核",
+      "provenance": "public_web_tool",
+      "visibility": "public",
+      "inserted_into_collection_database": true,
+      "fields": {
+        "title": {
+          "value": "AI时代高校课堂的未来趋势：混合式学习",
+          "evidence": "官方详情页标题",
+          "review": "confirmed_in_source"
+        },
+        "published_at": {
+          "value": "2026-10-19",
+          "evidence": "2026-10-19",
+          "review": "confirmed_in_source"
+        },
+        "activity_time": {
+          "value": {
+            "starts_at": "2026-10-22T11:50:00+08:00",
+            "ends_at": "2026-10-22T13:20:00+08:00",
+            "timezone": "Asia/Shanghai",
+            "raw": "2026-10-22 11:50—13:20"
+          },
+          "evidence": "2026-10-22 11:50—13:20",
+          "review": "confirmed_in_source"
+        },
+        "location": {
+          "value": "闵行校区陈瑞球楼504室",
+          "evidence": "讲座地点：闵行校区陈瑞球楼 504室",
+          "review": "confirmed_in_source"
+        },
+        "eligibility": {
+          "value": {
+            "addressed_audience": "老师",
+            "complete_conditions": null
+          },
+          "evidence": "请有兴趣参加本次活动的老师",
+          "review": "partial"
+        },
+        "registration_deadline": {
+          "value": {
+            "raw": "10月21日17:00前",
+            "normalized": null
+          },
+          "evidence": "10月21日17:00前；原句未带年份",
+          "review": "partial"
+        },
+        "source": {
+          "value": "https://news.sjtu.edu.cn/xsjz/20261019/226745.html",
+          "evidence": "官方站点详情地址",
+          "review": "confirmed_in_source"
+        }
+      },
+      "content_type": "announcement",
+      "status_at_review": "ended_by_explicit_time",
+      "notes": [
+        "面向老师的报名语句不是对学生开放的证明。"
+      ],
+      "collector_output_compared": true,
+      "user_human_reviewed": false,
+      "collector_comparison": {
+        "checked_at": "2026-10-28T07:32:00.355506+00:00",
+        "method": "Codex reviewed archived official HTML and compared actual collector output; no user sign-off",
+        "raw_html": "outputs/phase1-qualification/live-final/review-news-226745.html",
+        "raw_sha256": "51ca9049c604fa075eb3a7141ce984e73ea4c16a350e17d49097cf80fa126520",
+        "title": "AI时代高校课堂的未来趋势：混合式学习 — 教学工作坊（数字化赋能教师发展系列）",
+        "actual": {
+          "starts_at": "2026-10-22T11:50:00+08:00",
+          "ends_at": "2026-10-22T13:20:00+08:00",
+          "time_precision": "minute",
+          "location": "闵行校区陈瑞球楼 504室",
+          "audience": "老师",
+          "eligibility": null,
+          "registration_deadline": null,
+          "status": "past"
+        },
+        "field_evidence": {
+          "starts_at": {
+            "url": "https://news.sjtu.edu.cn/xsjz/20261019/226745.html",
+            "text": "2026-10-22 11:50—13:20",
+            "precision": "minute"
+          },
+          "ends_at": {
+            "url": "https://news.sjtu.edu.cn/xsjz/20261019/226745.html",
+            "text": "2026-10-22 11:50—13:20",
+            "precision": "minute"
+          },
+          "audience": {
+            "url": "https://news.sjtu.edu.cn/xsjz/20261019/226745.html",
+            "text": "老师",
+            "complete_eligibility": false
+          },
+          "location": {
+            "url": "https://news.sjtu.edu.cn/xsjz/20261019/226745.html",
+            "text": "闵行校区陈瑞球楼 504室"
+          },
+          "registration_deadline": {
+            "url": "https://news.sjtu.edu.cn/xsjz/20261019/226745.html",
+            "partial_texts": [
+              "10月21日17:00前"
+            ],
+            "missing": "year"
+          },
+          "campus": {
+            "url": "https://news.sjtu.edu.cn/xsjz/20261019/226745.html",
+            "text": "闵行校区陈瑞球楼 504室"
+          }
+        },
+        "published_at": "2026-10-19",
+        "warnings": [
+          "images_or_attachments_pending"
+        ],
+        "checks": {
+          "title": "source_supported_or_explicit_unknown",
+          "activity_time": "source_supported_or_explicit_unknown",
+          "location": "source_supported_or_explicit_unknown",
+          "eligibility": "source_supported_or_explicit_unknown",
+          "source": "source_supported_or_explicit_unknown"
+        },
+        "notes": [
+          "详情标题保留页面副标题；正文和地点只存在排版空白差异。"
+        ]
+      }
+    },
+    {
+      "id": "review-me-78072",
+      "source_id": "sjtu-me-reports",
+      "url": "https://me.sjtu.edu.cn/tsfx-xsbg/78072.html",
+      "checked_at": "2026-10-28T05:45:55Z",
+      "review_method": "Codex逐字段阅读公开网页工具返回的官方正文；不是自动采集器输出，也不是用户本人审核",
+      "provenance": "public_web_tool",
+      "visibility": "public",
+      "inserted_into_collection_database": true,
+      "fields": {
+        "title": {
+          "value": "思源讲堂第四十三期：Prof. Erwin Reisner学术报告会",
+          "evidence": "官方详情页标题",
+          "review": "confirmed_in_source"
+        },
+        "published_at": {
+          "value": "2026-11-09",
+          "evidence": "2026-11-09",
+          "review": "source_anomaly_future_date"
+        },
+        "activity_time": {
+          "value": {
+            "starts_at": "2026-11-09T14:00:00+08:00",
+            "ends_at": "2026-11-09T15:00:00+08:00",
+            "timezone": "Asia/Shanghai",
+            "raw": "2026-11-09 14:00-15:00"
+          },
+          "evidence": "2026-11-09 14:00-15:00",
+          "review": "confirmed_in_source"
+        },
+        "location": {
+          "value": "机械与动力工程学院A楼振华会议室",
+          "evidence": "正文地点：机械与动力工程学院A楼振华会议室",
+          "review": "confirmed_in_source"
+        },
+        "eligibility": {
+          "value": null,
+          "evidence": "可读正文未明确参加资格；未从院系、邀请人或报告主题推定资格",
+          "review": "unknown"
+        },
+        "registration_deadline": {
+          "value": null,
+          "evidence": "本轮可见正文未发现可核实的报名截止时间",
+          "review": "unknown"
+        },
+        "source": {
+          "value": "https://me.sjtu.edu.cn/tsfx-xsbg/78072.html",
+          "evidence": "官方站点详情地址",
+          "review": "confirmed_in_source"
+        },
+        "report_topic": {
+          "value": "Solar Chemical Technologies",
+          "evidence": "详情正文“题目”字段",
+          "review": "confirmed_in_source"
+        }
+      },
+      "content_type": "announcement",
+      "status_at_review": "upcoming_time_eligibility_unknown",
+      "notes": [
+        "页内标注的发布时间晚于本次检查日，且与举办日相同；记录原值并标记异常，不作为真实发布时刻。",
+        "未从网站页脚地址补充活动校区；未取得报名状态。"
+      ],
+      "collector_output_compared": true,
+      "user_human_reviewed": false,
+      "collector_comparison": {
+        "checked_at": "2026-10-28T07:32:00.355506+00:00",
+        "method": "Codex reviewed archived official HTML and compared actual collector output; no user sign-off",
+        "raw_html": "outputs/phase1-qualification/live-final/review-me-78072.html",
+        "raw_sha256": "7b558f6dda775c3356061649423c95613b71230812a73a78915f38908d9b784e",
+        "title": "思源讲堂第四十三期：Prof. Erwin Reisner学术报告会",
+        "actual": {
+          "starts_at": "2026-11-09T14:00:00+08:00",
+          "ends_at": "2026-11-09T15:00:00+08:00",
+          "time_precision": "minute",
+          "location": "机械与动力工程学院A楼振华会议室",
+          "audience": null,
+          "eligibility": null,
+          "registration_deadline": null,
+          "status": "scheduled_registration_unknown"
+        },
+        "field_evidence": {
+          "starts_at": {
+            "url": "https://me.sjtu.edu.cn/tsfx-xsbg/78072.html",
+            "text": "2026年11月9日 14:00-15:00",
+            "precision": "minute"
+          },
+          "ends_at": {
+            "url": "https://me.sjtu.edu.cn/tsfx-xsbg/78072.html",
+            "text": "2026年11月9日 14:00-15:00",
+            "precision": "minute"
+          },
+          "location": {
+            "url": "https://me.sjtu.edu.cn/tsfx-xsbg/78072.html",
+            "text": "机械与动力工程学院A楼振华会议室"
+          }
+        },
+        "published_at": "2026-11-09",
+        "warnings": [
+          "publisher_date_in_future_unverified",
+          "images_or_attachments_pending"
+        ],
+        "checks": {
+          "title": "source_supported_or_explicit_unknown",
+          "activity_time": "source_supported_or_explicit_unknown",
+          "location": "source_supported_or_explicit_unknown",
+          "eligibility": "source_supported_or_explicit_unknown",
+          "source": "source_supported_or_explicit_unknown"
+        },
+        "notes": []
+      }
+    },
+    {
+      "id": "review-me-78050",
+      "source_id": "sjtu-me-reports",
+      "url": "https://me.sjtu.edu.cn/tsfx-xsbg/78050.html",
+      "checked_at": "2026-10-28T05:45:55Z",
+      "review_method": "Codex逐字段阅读公开网页工具返回的官方正文；不是自动采集器输出，也不是用户本人审核",
+      "provenance": "public_web_tool",
+      "visibility": "public",
+      "inserted_into_collection_database": true,
+      "fields": {
+        "title": {
+          "value": "黄强博士学术报告会",
+          "evidence": "官方详情页标题",
+          "review": "confirmed_in_source"
+        },
+        "published_at": {
+          "value": "2026-11-05",
+          "evidence": "2026-11-05",
+          "review": "source_anomaly_future_date"
+        },
+        "activity_time": {
+          "value": {
+            "starts_at": "2026-11-05T09:00:00+08:00",
+            "ends_at": "2026-11-05T11:00:00+08:00",
+            "timezone": "Asia/Shanghai",
+            "raw": "2026-11-05 09:00-11:00"
+          },
+          "evidence": "2026-11-05 09:00-11:00",
+          "review": "confirmed_in_source"
+        },
+        "location": {
+          "value": "机械与动力工程学院振华会议室",
+          "evidence": "正文地点：机械与动力工程学院振华会议室",
+          "review": "confirmed_in_source"
+        },
+        "eligibility": {
+          "value": null,
+          "evidence": "可读正文未明确参加资格；未从院系、邀请人或报告主题推定资格",
+          "review": "unknown"
+        },
+        "registration_deadline": {
+          "value": null,
+          "evidence": "本轮可见正文未发现可核实的报名截止时间",
+          "review": "unknown"
+        },
+        "source": {
+          "value": "https://me.sjtu.edu.cn/tsfx-xsbg/78050.html",
+          "evidence": "官方站点详情地址",
+          "review": "confirmed_in_source"
+        },
+        "report_topic": {
+          "value": "AI、电动化与软件定义汽车——能源动力技术变革与汽车产业战略重构",
+          "evidence": "详情正文“题目”字段",
+          "review": "confirmed_in_source"
+        }
+      },
+      "content_type": "announcement",
+      "status_at_review": "upcoming_time_eligibility_unknown",
+      "notes": [
+        "页内标注的发布时间晚于本次检查日，且与举办日相同；记录原值并标记异常，不作为真实发布时刻。",
+        "未从网站页脚地址补充活动校区；未取得报名状态。"
+      ],
+      "collector_output_compared": true,
+      "user_human_reviewed": false,
+      "collector_comparison": {
+        "checked_at": "2026-10-28T07:32:00.355506+00:00",
+        "method": "Codex reviewed archived official HTML and compared actual collector output; no user sign-off",
+        "raw_html": "outputs/phase1-qualification/live-final/review-me-78050.html",
+        "raw_sha256": "89296f286c86ed3f75311505d307377e5c28661a321ca95fd6448b23ca7440cc",
+        "title": "黄强博士学术报告会",
+        "actual": {
+          "starts_at": "2026-11-05T09:00:00+08:00",
+          "ends_at": "2026-11-05T11:00:00+08:00",
+          "time_precision": "minute",
+          "location": "机械与动力工程学院 振华会议室",
+          "audience": null,
+          "eligibility": null,
+          "registration_deadline": null,
+          "status": "scheduled_registration_unknown"
+        },
+        "field_evidence": {
+          "starts_at": {
+            "url": "https://me.sjtu.edu.cn/tsfx-xsbg/78050.html",
+            "text": "2026年11月5日 9:00-11:00",
+            "precision": "minute"
+          },
+          "ends_at": {
+            "url": "https://me.sjtu.edu.cn/tsfx-xsbg/78050.html",
+            "text": "2026年11月5日 9:00-11:00",
+            "precision": "minute"
+          },
+          "location": {
+            "url": "https://me.sjtu.edu.cn/tsfx-xsbg/78050.html",
+            "text": "机械与动力工程学院 振华会议室"
+          }
+        },
+        "published_at": "2026-11-05",
+        "warnings": [
+          "publisher_date_in_future_unverified",
+          "images_or_attachments_pending"
+        ],
+        "checks": {
+          "title": "source_supported_or_explicit_unknown",
+          "activity_time": "source_supported_or_explicit_unknown",
+          "location": "source_supported_or_explicit_unknown",
+          "eligibility": "source_supported_or_explicit_unknown",
+          "source": "source_supported_or_explicit_unknown"
+        },
+        "notes": []
+      }
+    },
+    {
+      "id": "review-me-78090",
+      "source_id": "sjtu-me-reports",
+      "url": "https://me.sjtu.edu.cn/tsfx-xsbg/78090.html",
+      "checked_at": "2026-10-28T05:45:55Z",
+      "review_method": "Codex逐字段阅读公开网页工具返回的官方正文；不是自动采集器输出，也不是用户本人审核",
+      "provenance": "public_web_tool",
+      "visibility": "public",
+      "inserted_into_collection_database": true,
+      "fields": {
+        "title": {
+          "value": "马清海正高级经济师学术报告会",
+          "evidence": "官方详情页标题",
+          "review": "confirmed_in_source"
+        },
+        "published_at": {
+          "value": "2026-11-04",
+          "evidence": "2026-11-04",
+          "review": "source_anomaly_future_date"
+        },
+        "activity_time": {
+          "value": {
+            "starts_at": "2026-11-04T14:00:00+08:00",
+            "ends_at": "2026-11-04T16:00:00+08:00",
+            "timezone": "Asia/Shanghai",
+            "raw": "2026-11-04 14:00-16:00"
+          },
+          "evidence": "2026-11-04 14:00-16:00",
+          "review": "confirmed_in_source"
+        },
+        "location": {
+          "value": "机械与动力工程学院A楼高田会堂",
+          "evidence": "正文地点：机械与动力工程学院A楼高田会堂",
+          "review": "confirmed_in_source"
+        },
+        "eligibility": {
+          "value": null,
+          "evidence": "可读正文未明确参加资格；未从院系、邀请人或报告主题推定资格",
+          "review": "unknown"
+        },
+        "registration_deadline": {
+          "value": null,
+          "evidence": "本轮可见正文未发现可核实的报名截止时间",
+          "review": "unknown"
+        },
+        "source": {
+          "value": "https://me.sjtu.edu.cn/tsfx-xsbg/78090.html",
+          "evidence": "官方站点详情地址",
+          "review": "confirmed_in_source"
+        },
+        "report_topic": {
+          "value": "新时代的企业变革：数智化转型",
+          "evidence": "详情正文“题目”字段",
+          "review": "confirmed_in_source"
+        }
+      },
+      "content_type": "announcement",
+      "status_at_review": "upcoming_time_eligibility_unknown",
+      "notes": [
+        "页内标注的发布时间晚于本次检查日，且与举办日相同；记录原值并标记异常，不作为真实发布时刻。",
+        "未从网站页脚地址补充活动校区；未取得报名状态。"
+      ],
+      "collector_output_compared": true,
+      "user_human_reviewed": false,
+      "collector_comparison": {
+        "checked_at": "2026-10-28T07:32:00.355506+00:00",
+        "method": "Codex reviewed archived official HTML and compared actual collector output; no user sign-off",
+        "raw_html": "outputs/phase1-qualification/live-final/review-me-78090.html",
+        "raw_sha256": "ff71ce99b91b9770978ee77eff2869e56e4dac96572af0aff13722211b74b919",
+        "title": "马清海正高级经济师学术报告会",
+        "actual": {
+          "starts_at": "2026-11-04T14:00:00+08:00",
+          "ends_at": "2026-11-04T16:00:00+08:00",
+          "time_precision": "minute",
+          "location": "机械与动力工程学院A楼 高田会堂",
+          "audience": null,
+          "eligibility": null,
+          "registration_deadline": null,
+          "status": "scheduled_registration_unknown"
+        },
+        "field_evidence": {
+          "starts_at": {
+            "url": "https://me.sjtu.edu.cn/tsfx-xsbg/78090.html",
+            "text": "2026年11月4日 14:00-16:00",
+            "precision": "minute"
+          },
+          "ends_at": {
+            "url": "https://me.sjtu.edu.cn/tsfx-xsbg/78090.html",
+            "text": "2026年11月4日 14:00-16:00",
+            "precision": "minute"
+          },
+          "location": {
+            "url": "https://me.sjtu.edu.cn/tsfx-xsbg/78090.html",
+            "text": "机械与动力工程学院A楼 高田会堂"
+          }
+        },
+        "published_at": "2026-11-04",
+        "warnings": [
+          "publisher_date_in_future_unverified",
+          "images_or_attachments_pending"
+        ],
+        "checks": {
+          "title": "source_supported_or_explicit_unknown",
+          "activity_time": "source_supported_or_explicit_unknown",
+          "location": "source_supported_or_explicit_unknown",
+          "eligibility": "source_supported_or_explicit_unknown",
+          "source": "source_supported_or_explicit_unknown"
+        },
+        "notes": []
+      }
+    },
+    {
+      "id": "review-me-78071",
+      "source_id": "sjtu-me-reports",
+      "url": "https://me.sjtu.edu.cn/tsfx-xsbg/78071.html",
+      "checked_at": "2026-10-28T05:45:55Z",
+      "review_method": "Codex逐字段阅读公开网页工具返回的官方正文；不是自动采集器输出，也不是用户本人审核",
+      "provenance": "public_web_tool",
+      "visibility": "public",
+      "inserted_into_collection_database": true,
+      "fields": {
+        "title": {
+          "value": "思源讲堂第四十二期：Dr. Steffen Haack学术报告会",
+          "evidence": "官方详情页标题",
+          "review": "confirmed_in_source"
+        },
+        "published_at": {
+          "value": "2026-10-30",
+          "evidence": "2026-10-30",
+          "review": "source_anomaly_future_date"
+        },
+        "activity_time": {
+          "value": {
+            "starts_at": "2026-10-30T14:30:00+08:00",
+            "ends_at": "2026-10-30T15:15:00+08:00",
+            "timezone": "Asia/Shanghai",
+            "raw": "2026-10-30 14:30-15:15"
+          },
+          "evidence": "2026-10-30 14:30-15:15",
+          "review": "confirmed_in_source"
+        },
+        "location": {
+          "value": "机械与动力工程学院新工程馆259会议室",
+          "evidence": "正文地点：机械与动力工程学院新工程馆259会议室",
+          "review": "confirmed_in_source"
+        },
+        "eligibility": {
+          "value": null,
+          "evidence": "可读正文未明确参加资格；未从院系、邀请人或报告主题推定资格",
+          "review": "unknown"
+        },
+        "registration_deadline": {
+          "value": null,
+          "evidence": "本轮可见正文未发现可核实的报名截止时间",
+          "review": "unknown"
+        },
+        "source": {
+          "value": "https://me.sjtu.edu.cn/tsfx-xsbg/78071.html",
+          "evidence": "官方站点详情地址",
+          "review": "confirmed_in_source"
+        },
+        "report_topic": {
+          "value": "流体动力技术中的人工智能",
+          "evidence": "详情正文“题目”字段",
+          "review": "confirmed_in_source"
+        }
+      },
+      "content_type": "announcement",
+      "status_at_review": "upcoming_time_eligibility_unknown",
+      "notes": [
+        "页内标注的发布时间晚于本次检查日，且与举办日相同；记录原值并标记异常，不作为真实发布时刻。",
+        "未从网站页脚地址补充活动校区；未取得报名状态。"
+      ],
+      "collector_output_compared": true,
+      "user_human_reviewed": false,
+      "collector_comparison": {
+        "checked_at": "2026-10-28T07:32:00.355506+00:00",
+        "method": "Codex reviewed archived official HTML and compared actual collector output; no user sign-off",
+        "raw_html": "outputs/phase1-qualification/live-final/review-me-78071.html",
+        "raw_sha256": "3507ef2020df3cc9746c957b03566f6403048571ab8733a99f23a7ae29de33fa",
+        "title": "思源讲堂第四十二期：Dr. Steffen Haack学术报告会",
+        "actual": {
+          "starts_at": "2026-10-30T14:30:00+08:00",
+          "ends_at": "2026-10-30T15:15:00+08:00",
+          "time_precision": "minute",
+          "location": "机械与动力工程学院新工程馆259会议室",
+          "audience": null,
+          "eligibility": null,
+          "registration_deadline": null,
+          "status": "scheduled_registration_unknown"
+        },
+        "field_evidence": {
+          "starts_at": {
+            "url": "https://me.sjtu.edu.cn/tsfx-xsbg/78071.html",
+            "text": "2026年10月30日 14:30-15:15",
+            "precision": "minute"
+          },
+          "ends_at": {
+            "url": "https://me.sjtu.edu.cn/tsfx-xsbg/78071.html",
+            "text": "2026年10月30日 14:30-15:15",
+            "precision": "minute"
+          },
+          "location": {
+            "url": "https://me.sjtu.edu.cn/tsfx-xsbg/78071.html",
+            "text": "机械与动力工程学院新工程馆259会议室"
+          }
+        },
+        "published_at": "2026-10-30",
+        "warnings": [
+          "publisher_date_in_future_unverified",
+          "images_or_attachments_pending"
+        ],
+        "checks": {
+          "title": "source_supported_or_explicit_unknown",
+          "activity_time": "source_supported_or_explicit_unknown",
+          "location": "source_supported_or_explicit_unknown",
+          "eligibility": "source_supported_or_explicit_unknown",
+          "source": "source_supported_or_explicit_unknown"
+        },
+        "notes": []
+      }
+    },
+    {
+      "id": "review-ctld-english",
+      "source_id": "sjtu-ctld-events",
+      "url": "https://ctld.sjtu.edu.cn/events/detail/1fn95z2o1kab10f6k216wv0a1jw6hf1k",
+      "checked_at": "2026-10-28T05:45:55Z",
+      "review_method": "Codex逐字段阅读公开网页工具返回的官方正文；不是自动采集器输出，也不是用户本人审核",
+      "provenance": "public_web_tool",
+      "visibility": "public",
+      "inserted_into_collection_database": true,
+      "fields": {
+        "title": {
+          "value": "学习能力提升营（总第57期）：如何在大学阶段学好英语",
+          "evidence": "官方详情页标题",
+          "review": "confirmed_in_source"
+        },
+        "published_at": {
+          "value": null,
+          "evidence": "本轮可见正文未确认独立的发布时间",
+          "review": "unknown"
+        },
+        "activity_time": {
+          "value": {
+            "starts_at": "2026-10-14T14:00:00+08:00",
+            "ends_at": "2026-10-14T15:30:00+08:00",
+            "timezone": "Asia/Shanghai",
+            "raw": "2026年10月14日14:00--15:30"
+          },
+          "evidence": "2026年10月14日14:00--15:30",
+          "review": "confirmed_in_source"
+        },
+        "location": {
+          "value": "闵行校区东中院1-106",
+          "evidence": "地点：闵行校区东中院1-106",
+          "review": "confirmed_in_source"
+        },
+        "eligibility": {
+          "value": {
+            "addressed_audience": "同学",
+            "complete_conditions": null
+          },
+          "evidence": "请有兴趣参加本次活动的同学",
+          "review": "partial"
+        },
+        "registration_deadline": {
+          "value": {
+            "raw": "10月13日17:00前",
+            "normalized": null
+          },
+          "evidence": "10月13日17:00前；原句未带年份",
+          "review": "partial"
+        },
+        "source": {
+          "value": "https://ctld.sjtu.edu.cn/events/detail/1fn95z2o1kab10f6k216wv0a1jw6hf1k",
+          "evidence": "官方站点详情地址",
+          "review": "confirmed_in_source"
+        }
+      },
+      "content_type": "announcement",
+      "status_at_review": "ended_by_explicit_time",
+      "notes": [
+        "本轮直接打开偶发超时，但公开搜索结果提供官方详情正文；未使用报名入口。"
+      ],
+      "collector_output_compared": true,
+      "user_human_reviewed": false,
+      "collector_comparison": {
+        "checked_at": "2026-10-28T07:32:00.355506+00:00",
+        "method": "Codex reviewed archived official HTML and compared actual collector output; no user sign-off",
+        "raw_html": "outputs/phase1-qualification/live-final/review-ctld-english.html",
+        "raw_sha256": "a864b00a63938d14d0c298a99b38d7f09269e519b9542730182ed80f96c730a7",
+        "title": "学习能力提升营（总第57期）：如何在大学阶段学好英语",
+        "actual": {
+          "starts_at": "2026-10-14T14:00:00+08:00",
+          "ends_at": "2026-10-14T15:30:00+08:00",
+          "time_precision": "minute",
+          "location": "闵行校区东中院1-106",
+          "audience": "同学",
+          "eligibility": null,
+          "registration_deadline": null,
+          "status": "past"
+        },
+        "field_evidence": {
+          "starts_at": {
+            "url": "https://ctld.sjtu.edu.cn/events/detail/1fn95z2o1kab10f6k216wv0a1jw6hf1k",
+            "text": "2026年10月14日（星期三）14:00--15:30",
+            "precision": "minute"
+          },
+          "ends_at": {
+            "url": "https://ctld.sjtu.edu.cn/events/detail/1fn95z2o1kab10f6k216wv0a1jw6hf1k",
+            "text": "2026年10月14日（星期三）14:00--15:30",
+            "precision": "minute"
+          },
+          "audience": {
+            "url": "https://ctld.sjtu.edu.cn/events/detail/1fn95z2o1kab10f6k216wv0a1jw6hf1k",
+            "text": "同学",
+            "complete_eligibility": false
+          },
+          "location": {
+            "url": "https://ctld.sjtu.edu.cn/events/detail/1fn95z2o1kab10f6k216wv0a1jw6hf1k",
+            "text": "闵行校区东中院1-106"
+          },
+          "registration_deadline": {
+            "url": "https://ctld.sjtu.edu.cn/events/detail/1fn95z2o1kab10f6k216wv0a1jw6hf1k",
+            "partial_texts": [
+              "10月13日17:00前"
+            ],
+            "missing": "year"
+          },
+          "campus": {
+            "url": "https://ctld.sjtu.edu.cn/events/detail/1fn95z2o1kab10f6k216wv0a1jw6hf1k",
+            "text": "闵行校区东中院1-106"
+          }
+        },
+        "published_at": null,
+        "warnings": [
+          "images_or_attachments_pending"
+        ],
+        "checks": {
+          "title": "source_supported_or_explicit_unknown",
+          "activity_time": "source_supported_or_explicit_unknown",
+          "location": "source_supported_or_explicit_unknown",
+          "eligibility": "source_supported_or_explicit_unknown",
+          "source": "source_supported_or_explicit_unknown"
+        },
+        "notes": []
+      }
+    },
+    {
+      "id": "review-ctld-teaching-network",
+      "source_id": "sjtu-ctld-events",
+      "url": "https://ctld.sjtu.edu.cn/events/detail/i2bi77eq56n9q0xko4uhu08h33ju57d7",
+      "checked_at": "2026-10-28T05:45:55Z",
+      "review_method": "Codex逐字段阅读公开网页工具返回的官方正文；不是自动采集器输出，也不是用户本人审核",
+      "provenance": "public_web_tool",
+      "visibility": "public",
+      "inserted_into_collection_database": true,
+      "fields": {
+        "title": {
+          "value": "教与学讲坛：面向教创赛新工科课程改革的探索——以计算机网络课程为例",
+          "evidence": "官方详情页标题",
+          "review": "confirmed_in_source"
+        },
+        "published_at": {
+          "value": null,
+          "evidence": "本轮可见正文未确认独立的发布时间",
+          "review": "unknown"
+        },
+        "activity_time": {
+          "value": {
+            "starts_at": null,
+            "ends_at": null,
+            "timezone": "Asia/Shanghai",
+            "raw": "9月29日（周二）11:50--13:20"
+          },
+          "evidence": "时间：9月29日（周二）11:50--13:20",
+          "review": "partial_missing_year"
+        },
+        "location": {
+          "value": "闵行校区陈瑞球楼504室",
+          "evidence": "地点：闵行校区陈瑞球楼504室",
+          "review": "confirmed_in_source"
+        },
+        "eligibility": {
+          "value": {
+            "addressed_audience": "老师",
+            "complete_conditions": null
+          },
+          "evidence": "请有兴趣参加本次活动的老师",
+          "review": "partial"
+        },
+        "registration_deadline": {
+          "value": {
+            "raw": "9月28日17:00前",
+            "normalized": null
+          },
+          "evidence": "9月28日17:00前；年份未知",
+          "review": "partial_missing_year"
+        },
+        "source": {
+          "value": "https://ctld.sjtu.edu.cn/events/detail/i2bi77eq56n9q0xko4uhu08h33ju57d7",
+          "evidence": "官方站点详情地址",
+          "review": "confirmed_in_source"
+        }
+      },
+      "content_type": "announcement",
+      "status_at_review": "date_incomplete",
+      "notes": [
+        "正文个人简介提及2026年获奖不能单独证明活动年份；保留月日及时间，完整日期为空。",
+        "不把搜索抓取日期当发布时间。"
+      ],
+      "collector_output_compared": true,
+      "user_human_reviewed": false,
+      "collector_comparison": {
+        "checked_at": "2026-10-28T07:32:00.355506+00:00",
+        "method": "Codex reviewed archived official HTML and compared actual collector output; no user sign-off",
+        "raw_html": "outputs/phase1-qualification/live-final/review-ctld-teaching-network.html",
+        "raw_sha256": "9c59908374880b8a597cc2ee89c35e915a59ec2f3d2863821344cb312cd83808",
+        "title": "教与学讲坛：面向教创赛新工科课程改革的探索——以计算机网络课程为例",
+        "actual": {
+          "starts_at": "2026-09-29T11:50:00+08:00",
+          "ends_at": "2026-09-29T13:20:00+08:00",
+          "time_precision": "minute",
+          "location": "闵行校区陈瑞球楼 504 室",
+          "audience": "老师",
+          "eligibility": null,
+          "registration_deadline": null,
+          "status": "past"
+        },
+        "field_evidence": {
+          "starts_at": {
+            "url": "https://ctld.sjtu.edu.cn/events/detail/i2bi77eq56n9q0xko4uhu08h33ju57d7",
+            "text": "2026/09/29 11:50 - 2026/09/29 13:20",
+            "precision": "minute"
+          },
+          "ends_at": {
+            "url": "https://ctld.sjtu.edu.cn/events/detail/i2bi77eq56n9q0xko4uhu08h33ju57d7",
+            "text": "2026/09/29 11:50 - 2026/09/29 13:20",
+            "precision": "minute"
+          },
+          "audience": {
+            "url": "https://ctld.sjtu.edu.cn/events/detail/i2bi77eq56n9q0xko4uhu08h33ju57d7",
+            "text": "老师",
+            "complete_eligibility": false
+          },
+          "location": {
+            "url": "https://ctld.sjtu.edu.cn/events/detail/i2bi77eq56n9q0xko4uhu08h33ju57d7",
+            "text": "闵行校区陈瑞球楼 504 室"
+          },
+          "registration_deadline": {
+            "url": "https://ctld.sjtu.edu.cn/events/detail/i2bi77eq56n9q0xko4uhu08h33ju57d7",
+            "partial_texts": [
+              "9月28日17:00前"
+            ],
+            "missing": "year"
+          },
+          "campus": {
+            "url": "https://ctld.sjtu.edu.cn/events/detail/i2bi77eq56n9q0xko4uhu08h33ju57d7",
+            "text": "闵行校区陈瑞球楼 504 室"
+          }
+        },
+        "published_at": null,
+        "warnings": [
+          "images_or_attachments_pending"
+        ],
+        "checks": {
+          "title": "source_supported_or_explicit_unknown",
+          "activity_time": "source_supported_or_explicit_unknown",
+          "location": "source_supported_or_explicit_unknown",
+          "eligibility": "source_supported_or_explicit_unknown",
+          "source": "source_supported_or_explicit_unknown"
+        },
+        "notes": [
+          "完整HTML活动头明确写2026/09/29 11:50 - 2026/09/29 13:20；据此补齐年份，不使用人物简介推断。"
+        ]
+      }
+    },
+    {
+      "id": "review-ctld-csotl-call",
+      "source_id": "sjtu-ctld-events",
+      "url": "https://ctld.sjtu.edu.cn/events/detail/13wft64voa11do0tp1f0utg19mko91ul",
+      "checked_at": "2026-10-28T05:45:55Z",
+      "review_method": "Codex逐字段阅读公开网页工具返回的官方正文；不是自动采集器输出，也不是用户本人审核",
+      "provenance": "public_web_tool",
+      "visibility": "public",
+      "inserted_into_collection_database": true,
+      "fields": {
+        "title": {
+          "value": "中国高校第九届教学学术年会征稿通知",
+          "evidence": "官方详情页标题",
+          "review": "confirmed_in_source"
+        },
+        "published_at": {
+          "value": "2026-10-12",
+          "evidence": "2026-10-12",
+          "review": "document_signed_date_only"
+        },
+        "activity_time": {
+          "value": null,
+          "evidence": "本轮取得的正文区段没有核实大会举办起止日期",
+          "review": "unknown"
+        },
+        "location": {
+          "value": null,
+          "evidence": "本轮取得的正文区段没有核实大会地点",
+          "review": "unknown"
+        },
+        "eligibility": {
+          "value": {
+            "addressed_audience": "拟申报前置工作坊/拟投稿的老师",
+            "complete_conditions": null
+          },
+          "evidence": "正文分别称拟申报开设工作坊的老师、拟投稿的老师",
+          "review": "partial"
+        },
+        "registration_deadline": {
+          "value": {
+            "normalized": null,
+            "items": [
+              {
+                "type": "前置工作坊申报",
+                "opens_on": "2026-10-12",
+                "deadline_raw": "2026年12月31日24:00"
+              },
+              {
+                "type": "分会场论文投稿",
+                "opens_on": "2026-10-12",
+                "deadline_raw": "2027年2月20日24:00"
+              }
+            ]
+          },
+          "evidence": "工作坊截止2026年12月31日24:00；论文截止2027年2月20日24:00",
+          "review": "confirmed_multiple_deadlines"
+        },
+        "source": {
+          "value": "https://ctld.sjtu.edu.cn/events/detail/13wft64voa11do0tp1f0utg19mko91ul",
+          "evidence": "官方站点详情地址",
+          "review": "confirmed_in_source"
+        }
+      },
+      "content_type": "announcement",
+      "status_at_review": "call_with_future_deadlines_not_attendance_confirmed",
+      "notes": [
+        "页面末署日期为2026年10月12日；记录为署名日期，不保证CMS发布时间。",
+        "一篇文档含两类征集，不能只保存一个总报名截止。",
+        "本轮只取得搜索工具返回的正文区段，活动日期/地点未核实；不补值。"
+      ],
+      "collector_output_compared": true,
+      "user_human_reviewed": false,
+      "collector_comparison": {
+        "checked_at": "2026-10-28T07:32:00.355506+00:00",
+        "method": "Codex reviewed archived official HTML and compared actual collector output; no user sign-off",
+        "raw_html": "outputs/phase1-qualification/live-final/review-ctld-csotl-call.html",
+        "raw_sha256": "f80c21df257ab62e146370ac872b0c11337746275a69f502764e5ce3d56c09a1",
+        "title": "中国高校第九届教学学术年会征稿通知",
+        "actual": {
+          "starts_at": "2027-04-16",
+          "ends_at": "2027-04-18",
+          "time_precision": "date",
+          "location": "上海交通大学闵行校区（线下）",
+          "audience": "一线高校教师、高校教学管理人员、高校教学发展工作人员、高校教学研究人员",
+          "eligibility": null,
+          "registration_deadline": null,
+          "status": "scheduled_registration_unknown"
+        },
+        "field_evidence": {
+          "starts_at": {
+            "url": "https://ctld.sjtu.edu.cn/events/detail/13wft64voa11do0tp1f0utg19mko91ul",
+            "text": "2027年4月16-18日",
+            "precision": "date"
+          },
+          "ends_at": {
+            "url": "https://ctld.sjtu.edu.cn/events/detail/13wft64voa11do0tp1f0utg19mko91ul",
+            "text": "2027年4月16-18日",
+            "precision": "date"
+          },
+          "audience": {
+            "url": "https://ctld.sjtu.edu.cn/events/detail/13wft64voa11do0tp1f0utg19mko91ul",
+            "text": "一线高校教师、高校教学管理人员、高校教学发展工作人员、高校教学研究人员",
+            "complete_eligibility": false
+          },
+          "location": {
+            "url": "https://ctld.sjtu.edu.cn/events/detail/13wft64voa11do0tp1f0utg19mko91ul",
+            "text": "上海交通大学闵行校区（线下）"
+          },
+          "registration_deadline": {
+            "url": "https://ctld.sjtu.edu.cn/events/detail/13wft64voa11do0tp1f0utg19mko91ul",
+            "separate_submission_deadlines": [
+              {
+                "raw": "2026年12月31日24:00",
+                "context": "年会将于2026年10月12日开放前置工作坊申报，截止时间为2026年12月31日24:00。请拟申报开设前置工作坊的老师在此时间段内进入本次年会官方网站https://csotl.sjtu.edu.cn，点击“在线投稿”-“前置工作坊投稿”下载模版，填写个人简历和内容摘要后上传。"
+              },
+              {
+                "raw": "2027年2月20日24:00",
+                "context": "年会将于2026年10月12日开放投稿，截止时间为2027年2月20日24:00。请拟投稿的老师在此时间段内前往本次年会的官方网站https://csotl.sjtu.edu.cn，点击“在线投稿”-“分会场论文投稿”，提交论文全文。"
+              }
+            ]
+          },
+          "campus": {
+            "url": "https://ctld.sjtu.edu.cn/events/detail/13wft64voa11do0tp1f0utg19mko91ul",
+            "text": "上海交通大学闵行校区（线下）"
+          }
+        },
+        "published_at": null,
+        "warnings": [
+          "submission_deadlines_require_separate_actions",
+          "images_or_attachments_pending"
+        ],
+        "checks": {
+          "title": "source_supported_or_explicit_unknown",
+          "activity_time": "source_supported_or_explicit_unknown",
+          "location": "source_supported_or_explicit_unknown",
+          "eligibility": "source_supported_or_explicit_unknown",
+          "source": "source_supported_or_explicit_unknown"
+        },
+        "notes": [
+          "完整正文明确写2027年4月16-18日、上海交通大学闵行校区（线下）及参会对象；活动时刻未知。",
+          "2026-10-12仅为署名日期，CMS发布时间仍未知；两类投稿截止保留各自原文，不合并为总报名截止。"
+        ]
+      }
+    }
+  ],
+  "collector_compared_at": "2026-10-28T07:32:00.355506+00:00",
+  "collector_comparison_counts": {
+    "documents": 10,
+    "required_field_checks": 50,
+    "unsupported_values_found": 0,
+    "user_human_reviewed": 0,
+    "notes": "仅针对这10篇已逐字段审阅的样本；未知完整资格不计为已获取资格。"
+  },
+  "acceptance_decision": {
+    "at": "2026-10-28T07:55:49.182939+00:00",
+    "accepted_by": "user",
+    "user_statement": "接受本轮逐字段核对，完成第一阶段",
+    "scope": "Stage 1 S1-2 accepts this run of Codex source-by-source field comparison; no claim of human per-item review",
+    "stage_1_status": "accepted",
+    "stage_2_status": "not_started"
+  }
+}

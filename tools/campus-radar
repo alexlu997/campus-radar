@@ -1,0 +1,38 @@
+#!/usr/bin/env python3
+"""Explicit environment setup and a launcher for the installed package."""
+
+import argparse
+import os
+from pathlib import Path
+import subprocess
+import sys
+import venv
+
+
+def main(argv=None):
+    parser = argparse.ArgumentParser(add_help=False)
+    parser.add_argument("--data-dir", type=Path)
+    options, command = parser.parse_known_args(argv)
+    package = Path(__file__).resolve().parent.parent
+    data = (options.data_dir or Path(os.environ.get("CAMPUS_RADAR_HOME", str(
+        Path.home() / "Library/Application Support/CampusRadar")))).expanduser().resolve()
+    python = data / "venv/bin/python3"
+    if command == ["setup"]:
+        if sys.platform != "darwin" or sys.version_info[:2] != (3, 13):
+            parser.error("此预览版需要 macOS 和 Python 3.13；请使用 Python 3.13 运行 campus-radar setup")
+        data.mkdir(parents=True, exist_ok=True, mode=0o700)
+        data.chmod(0o700)
+        venv.EnvBuilder(with_pip=True).create(data / "venv")
+        subprocess.run([str(python), "-m", "pip", "install", "--disable-pip-version-check", "-r", str(package / "requirements.txt")], check=True)
+        print(f"初始化完成：{data}\n可重新打开校园雷达。后台更新需另行运行 campus-radar schedule-install 并在页面启用。")
+        return 0
+    if not python.is_file():
+        print("尚未初始化 Python 环境。请在此 DSH profile 中运行 campus-radar setup。", file=sys.stderr)
+        return 2
+    environment = {**os.environ, "CAMPUS_RADAR_HOME": str(data)}
+    os.chdir(package)
+    os.execve(python, [str(python), "-m", "campus_radar", *(command or ["--help"])], environment)
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())
