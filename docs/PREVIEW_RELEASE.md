@@ -1,6 +1,6 @@
 # macOS 预览版发布候选
 
-版本：`0.2.0-preview.2`。当前为本地候选，尚未推送 GitHub、创建标签或发布 Release。源码许可证已由用户确定为 Apache-2.0，官方原文随包提供。用户已确定公开仓库 `alexlu997/campus-radar`，GitHub 登录有效。`private: true` 仅阻止意外发布到 npm，不影响 GitHub 安装。
+版本：`0.2.0-preview.2`。已发布至 [GitHub Release](https://github.com/alexlu997/campus-radar/releases/tag/v0.2.0-preview.2)，版本标签对应源码提交 `48f45807fcedc7d1f328aeca124a38c849f32412`。源码许可证已由用户确定为 Apache-2.0，官方原文随包提供。用户已确定公开仓库 `alexlu997/campus-radar`，GitHub 登录有效。`private: true` 仅阻止意外发布到 npm，不影响 GitHub 安装。
 
 ## 本版变化
 
@@ -12,7 +12,7 @@
 
 支持环境：macOS、Python 3.13、lxml 6.1.2、DSH 0.2.1-rc.3。安装、升级及卸载步骤见 [INSTALL.md](INSTALL.md)。
 
-## 候选产物
+## 发布产物
 
 本地文件：`outputs/preview-qualification/candidate-4/campus-radar-dsh-0.2.0-preview.2.tgz`。
 
@@ -30,14 +30,14 @@
 
 证据目录为 `outputs/preview-qualification/`，真实宿主截图为 `output/playwright/preview-package-*.png`。这是同一台 Mac 上的隔离验收。
 
-## 发布前剩余事项
+## 发布结果与剩余事项
 
-1. 独立安装生命周期验收已完成；日常环境升级等待自动批准审查要求的明确部署授权。
-2. 用户已确定公开仓库 alexlu997/campus-radar 与 Apache-2.0；执行源码提交、推送、版本标签与 Release，并从标签安装复核。
+1. 独立安装生命周期验收与用户明确授权的日常升级已完成。日常库 40 篇文档、34 个活动，个人状态、公众号启用选择与上海 08:00 计划保留；14 个后台文件一致，完整性和外键通过。
+2. 公开仓库、标签与预览 Release 已发布。从 GitHub 标签实际安装解析到 `48f45807`，23 个文件与验收包逐字一致，原生侧栏及已保存状态读取通过；Release 服务端 SHA-256 与本地包一致。
 3. 按 [七日观察记录](PREVIEW_OBSERVATION.md)分别记录持续运行与实际使用价值。没有经过真实时间或没有用户反馈的项保持待验证。
 
 ## 已知限制
 
 仍仅默认采集三个官网栏目，补扫受请求预算约束，不代表全校或全历史覆盖。ME 砺远学术只检查最新一篇，历史回补、限流解除、未来新文章和授权长期有效性未验。海报、附件和缺失资格不补造内容。卸载时必须先运行 `schedule-uninstall`，单独在 DSH 移除插件不会停止外部 launchd 任务。
 
-未做真实整机睡眠／唤醒、第二台机器安装或 GitHub 标签安装。扩大来源、OCR、系统推送和复杂推荐排在 P1–P5 全部完成后。
+未做真实整机睡眠／唤醒或第二台机器安装。扩大来源、OCR、系统推送和复杂推荐排在 P1–P5 全部完成后。

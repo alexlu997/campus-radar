@@ -22,7 +22,7 @@ cd /absolute/path/campus-radar
 
 本机对照发现：把 Electron userData 放在仓库的 `Documents` 路径时，进程停在文件打开操作且没有 renderer；将该目录改到 `/private/tmp` 后正常产生原生页面与 Host 服务。这里记录的是路径对照结果，未把系统文件授权列为已证实根因。临时目录可能由系统清理；插件与数据库配置保存在项目的独立 Harness home 中。
 
-## 本地插件安装
+## 历史开发链接安装
 
 首次运行隔离实例会由 DSH 初始化 desktop profile。随后退出该实例，再在项目目录执行：
 
@@ -44,7 +44,7 @@ DSH_HOME="$PWD/outputs/dsh-home" \
     dbPath: /Users/your-user/Library/Application Support/CampusRadar/public.sqlite3
 ```
 
-当前 `dbPath` 指向 Application Support 正式库，加入 ME 砺远学术后包含 40 篇文档、34 条活动或截止事项。原项目内 `outputs/public.sqlite3` 保留为转移时副本。更早的 `outputs/sidebar-verification.sqlite3` 也独立保留，其中 1 条 `manual_reference` 只属于宿主测试，没有混入正式库。第二阶段已在真实原生实例通过筛选、详情、收藏、反馈、偏好、手动更新、简报及重启持久化；新增公众号的双出处展示与限流提示也已实际核对，见 [接入记录](werss.md)。
+该阶段 `dbPath` 指向 Application Support 正式库，加入 ME 砺远学术后包含 40 篇文档、34 条活动或截止事项。原项目内 `outputs/public.sqlite3` 保留为转移时副本。更早的 `outputs/sidebar-verification.sqlite3` 也独立保留，其中 1 条 `manual_reference` 只属于宿主测试，没有混入正式库。第二阶段已在真实原生实例通过筛选、详情、收藏、反馈、偏好、手动更新、简报及重启持久化；新增公众号的双出处展示与限流提示也已实际核对，见 [接入记录](werss.md)。
 
 插件代码通过本地链接读取，重新启动加载。第一阶段普通模式及停用／启用证据保留在 `outputs/phase1-qualification/`；第二阶段验收见 `docs/PHASE2.md` 和 `outputs/phase2-qualification/`。DSH 插件页面可停用该组合包或 `campus-radar` 条目，停用只改变本隔离 profile。
 
@@ -69,3 +69,9 @@ DSH_HOME="$PWD/outputs/dsh-home" \
 ```
 
 `--from-default-profile web` 会重置自定义 profile，只用于最初创建，不属于日常启动命令。Web profile 及其插件配置与原生 `desktop` profile 各自独立。
+
+## 预览版完整包迁移记录
+
+2026-10-28 已在明确部署授权后，从旧 `link:` 开发包迁移到 `0.2.0-preview.2` 完整包。使用原 profile 的既有 pnpm store；旧锁文件仍解析到开发链接时，先用 DSH CLI 移除该插件依赖，再安装完整包。只直接覆盖依赖地址可能保留旧链接，此次以安装后的版本、命令入口及文件内容验证结果。数据库和 profile 配置已预先备份。
+
+当前插件只需 `dataDir`，Python 来自该目录的独立 venv，代码来自已安装包；后台运行文件仍部署到用户数据目录。40 篇文档、34 个活动、原有设置和公众号启用选择保留，真实原生界面及后台代码一致性通过，最后恢复普通启动。新用户直接按 [INSTALL.md](INSTALL.md)安装，无需复现开发链接迁移。
